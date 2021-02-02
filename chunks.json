@@ -1,0 +1,14 @@
+{
+  "client": {
+    "css": [
+      "/static/css/bundle.06538657.css"
+    ],
+    "js": [
+      "/static/js/bundle.06538657.js",
+      "/static/js/bundle.06538657.js.map"
+    ],
+    "chunks": [
+      0
+    ]
+  }
+}

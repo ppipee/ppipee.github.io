@@ -1,15 +1,24 @@
-import { GRAY } from 'common/styles/colors'
 import styled from 'styled-components'
 
-const NAV_HEIGHT = '50px'
+import Gap from 'common/components/Gap'
+import { GRAY } from 'common/styles/colors'
 
-export const NavbarContainer = styled.div`
-  height: ${NAV_HEIGHT};
-  background-color: ${GRAY[900]};
-  color: ${GRAY.white};
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 0 24px;
+const NAV_HEIGHT = '50px'
+const MAX_WIDTH = '768px'
+
+export const NavbarContainer = styled(Gap)`
+	height: ${NAV_HEIGHT};
+	color: ${GRAY.white};
+	width: ${MAX_WIDTH};
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 0 24px;
+	margin: 0 auto;
+`
+
+export const NavbarWrapper = styled.div`
+	background-color: ${GRAY[900]};
+	width: 100%;
+	position: fixed;
 `

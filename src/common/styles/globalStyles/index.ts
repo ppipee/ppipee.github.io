@@ -1,4 +1,4 @@
-import { GRAY } from 'common/styles/colors'
+import { BLUE, GRAY } from 'common/styles/colors'
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
 		font-family: 'Lexend Deca', sans-serif;
 		color: ${GRAY[700]}; 
 		min-height:100vh;
+		background-color:${GRAY.white};
 	}
 
 	* {

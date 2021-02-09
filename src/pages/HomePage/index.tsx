@@ -1,10 +1,21 @@
 import React from 'react'
 
+import Header from './components/Header'
+import PersonalInformation from './components/PersonalInformation'
+import Project from './components/Project'
+import Skill from './components/Skill'
+import WorkExperience from './components/WorkExperience'
+import { ContainerWrapper } from './styled'
+
 const HomePage = () => {
 	return (
-		<div>
-			<h1 id="profile">Profile</h1>
-		</div>
+		<ContainerWrapper>
+			<Header />
+			<PersonalInformation />
+			<Skill />
+			<WorkExperience />
+			<Project />
+		</ContainerWrapper>
 	)
 }
 

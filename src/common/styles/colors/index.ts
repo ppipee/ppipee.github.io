@@ -1,11 +1,12 @@
 export const GRAY = {
-  900: 'black',
-  700: 'gray',
-  white: 'white',
+	900: '#1D2021',
+	700: '#3D4245',
+	200: '#F0F0F0',
+	white: '#FFFFFF',
 } as const
 
 export const BLUE = {
-  600: 'blue',
-  500: 'blue',
-  400: 'blue',
+	600: '#0093E8',
+	500: '#2DA8ED',
+	400: '#5CBCF1',
 }

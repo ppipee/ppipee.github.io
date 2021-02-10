@@ -26,12 +26,12 @@ export const Badge = styled.div`
 `
 
 export const Image = styled.img`
-	border-radius: 8px;
-	border: 4px solid ${BLUE[400]};
+	border-radius: 12px;
+	border: 3px solid ${GRAY[200]};
 	width: 100%;
 	height: ${IMAGE_HEIGHT};
 	object-fit: contain;
-	padding: 2px;
+	padding: 8px;
 `
 
 export const Description = styled.div`

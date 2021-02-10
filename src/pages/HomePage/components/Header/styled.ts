@@ -60,8 +60,10 @@ export const NameTitle = styled(Gap)`
 export const InfoContainer = styled.div`
 	flex: 1;
 	padding: 65px 36px 48px 24px;
+	margin-left: 48px;
 
 	@media only screen and (max-width: ${MOBILE_WIDTH}) {
 		padding: 24px;
+		margin-left: 0;
 	}
 `

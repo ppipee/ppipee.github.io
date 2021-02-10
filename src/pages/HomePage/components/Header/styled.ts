@@ -5,6 +5,7 @@ import { GRAY } from 'common/styles/colors'
 import { MOBILE_WIDTH } from 'common/styles/constants'
 
 const COVER_HEIGHT = '275px'
+const COVER_MOBILE_HEIGHT = '200px'
 const MAX_WIDTH = '768px'
 const IMAGE_SIZE = '215px'
 const CONTAINER_SIZE = '325px'
@@ -17,6 +18,10 @@ export const BackgroundCover = styled.div`
 	left: 0;
 	right: 0;
 	z-index: -1;
+
+	@media only screen and (max-width: ${MOBILE_WIDTH}) {
+		height: ${COVER_MOBILE_HEIGHT};
+	}
 `
 
 export const HeaderContainer = styled.div`
@@ -28,6 +33,7 @@ export const HeaderContainer = styled.div`
 	display: flex;
 
 	@media only screen and (max-width: ${MOBILE_WIDTH}) {
+		padding-top: 110px;
 		flex-direction: column;
 		align-items: center;
 	}

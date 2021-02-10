@@ -4,12 +4,13 @@ import Gap from 'common/components/Gap'
 import { GRAY } from 'common/styles/colors'
 
 const NAV_HEIGHT = '50px'
-const MAX_WIDTH = '768px'
+const MAX_WIDTH = '991px'
 
 export const NavbarContainer = styled(Gap)`
 	height: ${NAV_HEIGHT};
 	color: ${GRAY.white};
-	width: ${MAX_WIDTH};
+	width: 100%;
+	max-width: ${MAX_WIDTH};
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;

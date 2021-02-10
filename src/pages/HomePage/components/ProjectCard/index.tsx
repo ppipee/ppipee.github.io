@@ -17,15 +17,15 @@ const ProjectCard = ({ name, image, tools, description, timeRange, demo }: Props
 	return (
 		<CardContainer>
 			<Gap $type="vertical" $size="16px">
-				<Gap $type="vertical" $size="8px">
-					<div>{name}</div>
+				<Gap $type="vertical" $size="10px">
+					<div className="rg20">{name}</div>
 					<Gap $type="grid" $size="6px" $responsive>
 						{tools.map((tool, index) => (
 							<Badge key={`tool-${index}`}>{tool}</Badge>
 						))}
 					</Gap>
 				</Gap>
-				{image && <Image src={image} />}
+				{image && <Image src={image} loading="lazy" />}
 				<Description>
 					<span className="rg24">❝ </span>
 					<span>{description}</span>
@@ -34,7 +34,7 @@ const ProjectCard = ({ name, image, tools, description, timeRange, demo }: Props
 			</Gap>
 			<Footer>
 				{demo ? (
-					<a className="text-blue-500" href={demo}>
+					<a className="text-blue-500" href={demo} target="_blank">
 						DEMO
 					</a>
 				) : (

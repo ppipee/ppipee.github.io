@@ -31,19 +31,19 @@ const PersonalInformation = () => {
 				<div>
 					<Detail>
 						<span>Facebook :</span>
-						<a className="text-blue-500" href="https://facebook.com/ppipee.k">
+						<a className="text-blue-500" href="https://facebook.com/ppipee.k" target="_blank">
 							Pipe Kittapon
 						</a>
 					</Detail>
 					<Detail>
 						<span>Linkin :</span>
-						<a className="text-blue-500" href="https://linkedin.com/in/ppipee">
+						<a className="text-blue-500" href="https://linkedin.com/in/ppipee" target="_blank">
 							Kittapon Junsupakul
 						</a>
 					</Detail>
 					<Detail>
 						<span>Github :</span>
-						<a className="text-blue-500" href="github.com/ppipee">
+						<a className="text-blue-500" href="https://github.com/ppipee" target="_blank">
 							ppipee
 						</a>
 					</Detail>

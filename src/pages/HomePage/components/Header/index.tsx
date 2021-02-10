@@ -8,7 +8,7 @@ const Header = () => {
 	return (
 		<HeaderContainer>
 			<BackgroundCover />
-			<Image src={ProfileImg} />
+			<Image src={ProfileImg} loading="lazy" />
 			<InfoContainer>
 				<NameTitle $size="8px" $type="vertical">
 					<span>Ppipee Kittapon</span>

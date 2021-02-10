@@ -14,7 +14,7 @@ export const InfoContainer = styled.div`
 	grid-gap: 16px;
 	padding: 24px 16px 0;
 
-	@media only screen and (max-width: ${MOBILE_WIDTH}) {1
+	@media only screen and (max-width: ${MOBILE_WIDTH}) {
 		grid-template-columns: 1fr;
 	}
 `

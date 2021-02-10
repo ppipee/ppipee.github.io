@@ -16,7 +16,7 @@ const WorkExperienceCard = ({ at, logo, role, description, timeRange }: Props) =
 	return (
 		<CardContainer>
 			<ImageWrapper>
-				<Image src={logo} />
+				<Image src={logo} loading="lazy" />
 			</ImageWrapper>
 			<DetailContainer $type="vertical" $justifyContent="space-between" $size="16px">
 				<Gap $type="vertical" $size="6px">

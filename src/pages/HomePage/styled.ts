@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const MAX_WIDTH = '768px'
+const MAX_WIDTH = '991px'
 
 export const ContainerWrapper = styled.div`
 	width: 100%;

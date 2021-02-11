@@ -7,7 +7,9 @@ import RootPage from 'pages/RootPage'
 
 const TRACK_ID = 'UA-148381540-3'
 
-ReactGA.initialize(TRACK_ID)
+if (process.env.NODE_ENV === 'production') {
+  ReactGA.initialize(TRACK_ID)
+}
 
 hydrate(
   <BrowserRouter>

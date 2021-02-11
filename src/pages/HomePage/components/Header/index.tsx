@@ -15,12 +15,12 @@ const Header = () => {
 					<span>Software Developer</span>
 				</NameTitle>
 				<span className="rg18">
-					<span className="rg24">❝ </span>
+					<span className="rg24 text-blue-500">❝ </span>
 					<span>
 						Hi, my name is Pipe. I am a senior at Computer Engineer, Kasetsart University. My passion are develop my
 						skills, learn the latest technologies and grow professionally.
 					</span>
-					<span className="rg24"> ❞</span>
+					<span className="rg24 text-blue-500"> ❞</span>
 				</span>
 			</InfoContainer>
 		</HeaderContainer>

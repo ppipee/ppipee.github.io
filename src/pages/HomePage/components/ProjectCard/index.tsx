@@ -1,8 +1,9 @@
 import React from 'react'
 
 import Gap from 'common/components/Gap'
+import useTracker from 'common/hooks/useTracker'
 
-import { Badge, CardContainer, Description, Footer, Image } from './styled'
+import { Badge, CardContainer, Description, Footer, Image, DemoLink } from './styled';
 
 type Props = {
 	name: string
@@ -14,6 +15,12 @@ type Props = {
 }
 
 const ProjectCard = ({ name, image, tools, description, timeRange, demo }: Props) => {
+	const tracker = useTracker()
+
+	const trackDemo = () => {
+		tracker('project', 'click', name)
+	}
+
 	return (
 		<CardContainer>
 			<Gap $type="vertical" $size="16px">
@@ -27,19 +34,19 @@ const ProjectCard = ({ name, image, tools, description, timeRange, demo }: Props
 				</Gap>
 				{image && <Image src={image} loading="lazy" />}
 				<Description>
-					<span className="rg24">❝ </span>
+					<span className="rg24 text-blue-500">❝ </span>
 					<span>{description}</span>
-					<span className="rg24"> ❞</span>
+					<span className="rg24 text-blue-500"> ❞</span>
 				</Description>
 			</Gap>
 			<Footer>
 				{demo ? (
-					<a className="text-blue-500" href={demo} target="_blank">
+					<DemoLink className="text-blue-500" href={demo} target="_blank" onClick={trackDemo}>
 						DEMO
-					</a>
+					</DemoLink>
 				) : (
-					<div />
-				)}
+						<div />
+					)}
 				<span>{timeRange}</span>
 			</Footer>
 		</CardContainer>

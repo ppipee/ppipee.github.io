@@ -45,3 +45,17 @@ export const Footer = styled.div`
 	justify-content: space-between;
 	font-size: 12px;
 `
+
+export const DemoLink = styled.a`
+	cursor: pointer;
+	transform: 0.2s all;
+	border-radius:8px;
+	transition: 0.2s all;	
+	padding:8px 0;
+
+	:hover{
+		padding:8px 12px;
+		background-color:${BLUE[100]};
+	}
+
+`

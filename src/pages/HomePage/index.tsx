@@ -1,3 +1,4 @@
+import useImpressTracker from 'common/hooks/useImpressTracker'
 import React from 'react'
 
 import Header from './components/Header'
@@ -8,6 +9,8 @@ import WorkExperience from './components/WorkExperience'
 import { ContainerWrapper } from './styled'
 
 const HomePage = () => {
+	useImpressTracker()
+
 	return (
 		<ContainerWrapper>
 			<Header />

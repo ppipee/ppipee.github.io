@@ -9,4 +9,6 @@ export const BLUE = {
 	600: '#0093E8',
 	500: '#2DA8ED',
 	400: '#5CBCF1',
+	300: '#8CD1F6',
+	100: '#D8F0FD'
 }

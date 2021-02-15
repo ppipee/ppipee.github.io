@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 import { BLUE, GRAY } from 'common/styles/colors'
+import { MOBILE_WIDTH } from '../constants'
 
 const TypographyStyles = createGlobalStyle`
   .text-blue-600{
@@ -35,7 +36,29 @@ const TypographyStyles = createGlobalStyle`
 	}
 
 	.rg24{
-		font-size:20px;
+		font-size:24px;
+	}
+
+	@media only screen and (max-width: ${MOBILE_WIDTH}) {
+		.mWeb-rg14{
+			font-size:14px;
+		}
+
+		.mWeb-rg16{
+			font-size:16px;
+		}
+
+		.mWeb-rg18{
+			font-size:18px;
+		}
+
+		.mWeb-rg20{
+			font-size:20px;
+		}
+
+		.mWeb-rg24{
+			font-size:24px;
+		}
 	}
 `
 

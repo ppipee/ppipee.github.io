@@ -8,9 +8,9 @@ type Props = {
 
 const SkillDetail = ({ children }: Props) => {
 	return (
-		<TextContainer $size="16px">
-			<span className="rg24 text-blue-500">{`>`}</span>
-			<Text className="rg18">{children}</Text>
+		<TextContainer $size="12px">
+			<span className="rg18 mWeb-rg16 text-blue-500">{`>`}</span>
+			<Text className="rg18 mWeb-rg16">{children}</Text>
 		</TextContainer>
 	)
 }

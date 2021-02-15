@@ -47,7 +47,6 @@ export const Image = styled.img`
 `
 
 export const NameTitle = styled(Gap)`
-	font-size: 24px;
 	margin-bottom: 60px;
 	color: ${GRAY.white};
 
@@ -65,5 +64,6 @@ export const InfoContainer = styled.div`
 	@media only screen and (max-width: ${MOBILE_WIDTH}) {
 		padding: 24px;
 		margin-left: 0;
+		text-align: center;
 	}
 `

@@ -3,7 +3,7 @@ import React from 'react'
 import Gap from 'common/components/Gap'
 import useTracker from 'common/hooks/useTracker'
 
-import { Badge, CardContainer, Description, Footer, Image, DemoLink } from './styled';
+import { Badge, CardContainer, Description, Footer, Image, DemoLink } from './styled'
 
 type Props = {
 	name: string
@@ -25,7 +25,7 @@ const ProjectCard = ({ name, image, tools, description, timeRange, demo }: Props
 		<CardContainer>
 			<Gap $type="vertical" $size="16px">
 				<Gap $type="vertical" $size="10px">
-					<div className="rg20">{name}</div>
+					<div className="rg20 mWeb-rg18">{name}</div>
 					<Gap $type="grid" $size="6px" $responsive>
 						{tools.map((tool, index) => (
 							<Badge key={`tool-${index}`}>{tool}</Badge>
@@ -34,9 +34,9 @@ const ProjectCard = ({ name, image, tools, description, timeRange, demo }: Props
 				</Gap>
 				{image && <Image src={image} loading="lazy" />}
 				<Description>
-					<span className="rg24 text-blue-500">❝ </span>
-					<span>{description}</span>
-					<span className="rg24 text-blue-500"> ❞</span>
+					<span className="rg24 mWeb-rg20 text-blue-500">❝ </span>
+					<span className="rg18 mWeb-rg14">{description}</span>
+					<span className="rg24 mWeb-rg20 text-blue-500"> ❞</span>
 				</Description>
 			</Gap>
 			<Footer>
@@ -45,8 +45,8 @@ const ProjectCard = ({ name, image, tools, description, timeRange, demo }: Props
 						DEMO
 					</DemoLink>
 				) : (
-						<div />
-					)}
+					<div />
+				)}
 				<span>{timeRange}</span>
 			</Footer>
 		</CardContainer>

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 import { BLUE, GRAY } from 'common/styles/colors'
+import { MOBILE_WIDTH } from 'common/styles/constants'
 
 const BADGE_HEIGHT = '22px'
 const IMAGE_HEIGHT = '240px'
@@ -23,6 +24,11 @@ export const Badge = styled.div`
 	background: ${BLUE[400]};
 	font-size: 12px;
 	text-transform: lowercase;
+
+	@media only screen and (max-width: ${MOBILE_WIDTH}) {
+		font-size: 11px;
+		padding: 4px 8px;
+	}
 `
 
 export const Image = styled.img`
@@ -35,7 +41,6 @@ export const Image = styled.img`
 `
 
 export const Description = styled.div`
-	font-size: 16px;
 	margin-bottom: 24px;
 `
 
@@ -43,19 +48,23 @@ export const Footer = styled.div`
 	margin-top: auto;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	font-size: 12px;
+
+	@media only screen and (max-width: ${MOBILE_WIDTH}) {
+		font-size: 11px;
+	}
 `
 
 export const DemoLink = styled.a`
 	cursor: pointer;
 	transform: 0.2s all;
-	border-radius:8px;
-	transition: 0.2s all;	
-	padding:8px 0;
+	border-radius: 8px;
+	transition: 0.2s all;
+	padding: 8px 0;
 
-	:hover{
-		padding:8px 12px;
-		background-color:${BLUE[100]};
+	:hover {
+		padding: 8px 12px;
+		background-color: ${BLUE[100]};
 	}
-
 `

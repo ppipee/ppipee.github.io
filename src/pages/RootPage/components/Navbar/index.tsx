@@ -1,13 +1,13 @@
 import React from 'react'
 
-import Navigate from 'common/components/Link'
+import Navigate from 'common/components/Navigate'
 
 import { NavbarContainer, NavbarWrapper } from './styled'
 
 const Navbar = () => {
 	return (
 		<NavbarWrapper>
-			<NavbarContainer $size="8px">
+			<NavbarContainer $size="6px">
 				<Navigate to="profile">Profile</Navigate>
 				<Navigate to="skill">Skill</Navigate>
 				<Navigate to="working-experience">Experience</Navigate>

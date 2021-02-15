@@ -2,9 +2,7 @@ import styled from 'styled-components'
 
 import Gap from 'common/components/Gap'
 import { GRAY } from 'common/styles/colors'
-
-const NAV_HEIGHT = '50px'
-const MAX_WIDTH = '991px'
+import { NAV_HEIGHT, MAX_WIDTH, MOBILE_WIDTH } from 'common/styles/constants'
 
 export const NavbarContainer = styled(Gap)`
 	height: ${NAV_HEIGHT};
@@ -16,6 +14,11 @@ export const NavbarContainer = styled(Gap)`
 	justify-content: flex-end;
 	padding: 0 24px;
 	margin: 0 auto;
+
+	@media only screen and (max-width: ${MOBILE_WIDTH}) {
+		padding: 0 12px;
+		justify-content: center;
+	}
 `
 
 export const NavbarWrapper = styled.div`

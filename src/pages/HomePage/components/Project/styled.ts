@@ -10,5 +10,7 @@ export const ProjectList = styled.div`
 
 	@media only screen and (max-width: ${MOBILE_WIDTH}) {
 		grid-template-columns: 1fr;
+		grid-gap: 20px;
+		padding: 20px 8px;
 	}
 `

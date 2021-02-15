@@ -10,18 +10,18 @@ const Header = () => {
 			<BackgroundCover />
 			<Image src={ProfileImg} loading="lazy" />
 			<InfoContainer>
-				<NameTitle $size="8px" $type="vertical">
+				<NameTitle className="rg24 mWeb-rg20" $size="8px" $type="vertical">
 					<span>Ppipee Kittapon</span>
 					<span>Software Developer</span>
 				</NameTitle>
-				<span className="rg18">
-					<span className="rg24 text-blue-500">❝ </span>
+				<div className="rg18 mWeb-rg16">
+					<span className="rg24 mWeb-rg20 text-blue-500">❝ </span>
 					<span>
 						Hi, my name is Pipe. I am a senior at Computer Engineer, Kasetsart University. My passion are develop my
 						skills, learn the latest technologies and grow professionally.
 					</span>
-					<span className="rg24 text-blue-500"> ❞</span>
-				</span>
+					<span className="rg24 mWeb-rg20 text-blue-500"> ❞</span>
+				</div>
 			</InfoContainer>
 		</HeaderContainer>
 	)

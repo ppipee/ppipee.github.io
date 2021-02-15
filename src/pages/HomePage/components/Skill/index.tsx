@@ -16,7 +16,7 @@ const Skill = () => {
 				<Title id="skill">Skill</Title>
 				<SkillContainer $size="16px" $type="vertical">
 					<Gap $type="vertical" $size="8px">
-						<span className="rg20">Soft Skill ::</span>
+						<span className="rg20 mWeb-rg18">Soft Skill ::</span>
 						<SkillList>
 							{SOFT_SKILL.map((skill, index) => (
 								<SkillDetail key={`soft-skill-${index}`}>{skill}</SkillDetail>
@@ -24,7 +24,7 @@ const Skill = () => {
 						</SkillList>
 					</Gap>
 					<Gap $type="vertical" $size="8px">
-						<span className="rg20">Hard Skill ::</span>
+						<span className="rg20 mWeb-rg18">Hard Skill ::</span>
 						<SkillList>
 							{HARD_SKILL.map((skills: string[], index) => (
 								<SkillDetail key={`soft-skill-${index}`}>{skills.join('  ')}</SkillDetail>

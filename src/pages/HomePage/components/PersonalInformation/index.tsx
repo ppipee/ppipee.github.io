@@ -6,8 +6,16 @@ import useTracker from 'common/hooks/useTracker'
 
 import Title from '../Title'
 import {
-	DATE_OF_BIRTH, EMAIL, FACEBOOK_LINK, GITHUB_LINK, LINKED_IN_LINK, NAME, NICK_NAME, PHONE_NUMBER,
-	RESUME_LINK, SURNAME
+	DATE_OF_BIRTH,
+	EMAIL,
+	FACEBOOK_LINK,
+	GITHUB_LINK,
+	LINKED_IN_LINK,
+	NAME,
+	NICK_NAME,
+	PHONE_NUMBER,
+	RESUME_LINK,
+	SURNAME,
 } from './constants'
 import { Button, ButtonContainer, Detail, InfoContainer, Link } from './styled'
 
@@ -88,11 +96,11 @@ const PersonalInformation = () => {
 					<Detail>GPX 3.33</Detail>
 				</div>
 				<ButtonContainer $size="12px" $justifyContent="flex-end">
-					<a className="text-blue-500" href={RESUME_LINK} target="_blank" onClick={trackResume}>
-						<Button>
-							Download Resume
-						</Button>
-					</a>
+					<span>
+						<a className="text-blue-500" href={RESUME_LINK} target="_blank" onClick={trackResume}>
+							<Button>Download Resume</Button>
+						</a>
+					</span>
 				</ButtonContainer>
 			</InfoContainer>
 		</Container>

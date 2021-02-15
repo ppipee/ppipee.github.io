@@ -20,11 +20,11 @@ const WorkExperienceCard = ({ at, logo, role, description, timeRange }: Props) =
 			</ImageWrapper>
 			<DetailContainer $type="vertical" $justifyContent="space-between" $size="16px">
 				<Gap $type="vertical" $size="6px">
-					<span className="rg20">{role}</span>
-					<span className="rg18 text-blue-500">{`@${at}`}</span>
-					{description && <span className="rg18">{description}</span>}
+					<span className="rg20 mWeb-rg16">{role}</span>
+					<span className="rg18 mWeb-rg14 text-blue-500">{`@${at}`}</span>
+					{description && <span className="rg18 mWeb-rg14">{description}</span>}
 				</Gap>
-				<span className="rg18">{timeRange}</span>
+				<span className="rg18 mWeb-rg14">{timeRange}</span>
 			</DetailContainer>
 		</CardContainer>
 	)

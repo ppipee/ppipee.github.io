@@ -93,7 +93,7 @@ const PersonalInformation = () => {
 					<Detail>Education</Detail>
 					<Detail>Kasetsart University</Detail>
 					<Detail>B.Eng Computer Engineer</Detail>
-					<Detail>GPX 3.33</Detail>
+					<Detail>GPX 3.38</Detail>
 				</div>
 				<ButtonContainer $size="12px" $justifyContent="flex-end">
 					<span>

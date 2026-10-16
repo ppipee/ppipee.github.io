@@ -45,6 +45,7 @@ export const EXPERIENCE: Experience[] = [
 					'Improved release quality: single-branch CI/CD, shared release and revert jobs, a Slack and GitLab release-alert tool, and a Playwright E2E monorepo with parallel CI.',
 					'Brought LINE MAN Design System 3.0 into @lineman/ui and migrated consuming apps.',
 					'Built LMWN Cafe with Okta login and a menu collection page.',
+					'Wrote agent skills and rules (Claude Code, Cursor) for the playground, E2E and webview repos, and AI code review (Bugbot) guidelines across the webview, SDK and UI library.',
 				],
 			},
 			{

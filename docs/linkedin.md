@@ -29,6 +29,8 @@ I like writing things down before building them, so many of these started as an 
 
 Since 2020: 2,414 merge requests across 98 repositories.
 
+I also write the agent skills and AI code review rules my teams use with Claude Code and Cursor.
+
 Main stack: TypeScript, React, HTML, CSS. Familiar with Vue, Go, Python, Node.js and AST tooling.
 
 Portfolio, resume and full CV: https://ppipee.github.io
@@ -49,8 +51,9 @@ Full-time · Feb 2026 – Present · Bangkok, Thailand
 • Built Steak Management v2 and used it to extract feature modules in the webview; moved shared libraries to Rolldown and introduced versioned OTA deploys
 • Built a design and prototyping playground from scratch: monorepo, playground engine with design inspector and docs matrix, and a flow mode with flow maps
 • Proposed and built a recruitment service for frontend live-coding interviews: temporary, budget-capped LLM keys per candidate, an Okta-protected admin API and a rate-limited completion proxy
+• Wrote agent skills and rules (Claude Code, Cursor) for the playground, E2E and webview repos, and AI code review (Bugbot) guidelines across the webview, SDK and UI library
 
-Skills: TypeScript · React · Frontend Architecture · Developer Tooling · A/B Testing
+Skills: TypeScript · React · Frontend Architecture · Developer Tooling · AI-assisted Development
 
 ### Senior Software Engineer, Frontend
 Full-time · Jul 2024 – Jan 2026
@@ -157,7 +160,7 @@ Pin these five as top skills:
 TypeScript · React · Frontend Architecture · Design Systems · Developer Tooling
 
 Then add:
-HTML · CSS · Vue.js · Go · Python · Node.js · Micro-frontends · Abstract Syntax Trees (AST) · Vite · Rollup · Playwright · Vitest · GitLab CI/CD · A/B Testing · LINE LIFF
+AI-assisted Development · Claude Code · Cursor · LLM Integration · HTML · CSS · Vue.js · Go · Python · Node.js · Micro-frontends · Abstract Syntax Trees (AST) · Vite · Rollup · Playwright · Vitest · GitLab CI/CD · A/B Testing · LINE LIFF
 
 ---
 

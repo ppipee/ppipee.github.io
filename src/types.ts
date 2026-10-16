@@ -52,6 +52,8 @@ export interface Project {
 	tools: string[]
 	description: string
 	image?: string
+	screens?: string[]
+	url?: string
 	demo?: string
 }
 

@@ -6,6 +6,12 @@ import RainyImage from 'assets/images/rainy-1.png'
 import ScanSkinImage from 'assets/images/scanskin.png'
 import DarkModeImage from 'assets/images/wn-dark-mode.png'
 import TrackingInspectorImage from 'assets/images/wn-tracking-inspector.png'
+import CareersImage from 'assets/images/screens/careers.jpg'
+import LockDealsScreen from 'assets/images/screens/lock-deals.jpg'
+import LockDetailScreen from 'assets/images/screens/lock-detail.jpg'
+import SingleMealScreen from 'assets/images/screens/single-meal.jpg'
+import VipLandingScreen from 'assets/images/screens/vip-landing.jpg'
+import VipProfileScreen from 'assets/images/screens/vip-profile.jpg'
 
 import type { Project } from 'types'
 
@@ -17,6 +23,7 @@ export const WORK_PROJECTS: Project[] = [
 		tools: ['React', 'TypeScript', 'Shared SDK', 'Unleash'],
 		description:
 			'Monthly membership sold inside the LINE MAN app: plan selection, checkout, VIP profile, manage and cancel, and a LINE Premium partnership offer.',
+		screens: [VipLandingScreen, VipProfileScreen],
 	},
 	{
 		name: 'Lock Promotion',
@@ -25,6 +32,16 @@ export const WORK_PROJECTS: Project[] = [
 		tools: ['React', 'TypeScript', 'A/B testing', 'Analytics'],
 		description:
 			'Lets users lock in a restaurant deal before ordering. Built the first version, then bulk purchase, refunds, sorting, filters and flash-deal countdowns.',
+		screens: [LockDealsScreen, LockDetailScreen],
+	},
+	{
+		name: 'Single Meal',
+		context: 'LINE MAN app',
+		period: '2026',
+		tools: ['React', 'TypeScript', 'Unleash', 'Analytics'],
+		description:
+			'Single-portion menus with no minimum order and free delivery. Built the listing with "others are ordering" badges, empty states, onboarding tooltips and dynamic navigation.',
+		screens: [SingleMealScreen],
 	},
 	{
 		name: 'Group Ordering',
@@ -41,6 +58,15 @@ export const WORK_PROJECTS: Project[] = [
 		tools: ['React', 'TypeScript', 'Camera API'],
 		description:
 			'Know-your-merchant web flow: ID card, selfie and bank book capture with cropping, OTP, pre-registration, application status and the merchant QR code.',
+	},
+	{
+		name: 'LMWN Careers',
+		context: 'careers.lmwn.com',
+		period: '2021 – 2024',
+		tools: ['React', 'TypeScript', 'SSR'],
+		description: 'Company careers site with teams, perks, life at LMWN and job listings. Built the first version and later the Careers V2 update.',
+		image: CareersImage,
+		url: 'careers.lmwn.com',
 	},
 	{
 		name: 'Siriraj e-Portfolio',
@@ -65,6 +91,7 @@ export const WORK_PROJECTS: Project[] = [
 		description:
 			'Moved Wongnai web from DS1 and legacy styles to Design System 2.0 tokens so the whole site could switch themes, with a saved theme setting per user.',
 		image: DarkModeImage,
+		url: 'wongnai.com',
 	},
 	{
 		name: 'Wongnai Tracking Inspector',
@@ -81,6 +108,7 @@ export const WORK_PROJECTS: Project[] = [
 		tools: ['React', 'MobX', 'GraphQL', 'styled-components'],
 		description: 'Ordering website for picking up food yourself, from choosing a branch to tracking the order.',
 		image: PickupImage,
+		url: 'wongnai.com/pickup',
 	},
 ]
 

@@ -1,5 +1,5 @@
 import { EXPERIENCE } from 'constants/experience'
-import { SECTION_IDS } from 'constants/paths'
+import { CV_PDF_PATH, SECTION_IDS } from 'constants/paths'
 import { PROFILE } from 'constants/profile'
 import { HOME_LOCALES } from 'locales'
 
@@ -13,9 +13,14 @@ const ExperienceSection = () => (
 			id={SECTION_IDS.experience}
 			title={HOME_LOCALES.experienceTitle}
 			aside={
-				<p className={styles.education}>
-					{PROFILE.education.degree}, {PROFILE.education.school} · {PROFILE.education.detail}
-				</p>
+				<div className={styles.aside}>
+					<p className={styles.education}>
+						{PROFILE.education.degree}, {PROFILE.education.school} · {PROFILE.education.detail}
+					</p>
+					<a className={styles.cvLink} href={CV_PDF_PATH} target="_blank" rel="noopener">
+						{HOME_LOCALES.experienceCv}
+					</a>
+				</div>
 			}
 		/>
 		<ol className={styles.list}>

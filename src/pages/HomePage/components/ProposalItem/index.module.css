@@ -46,6 +46,15 @@
 	color: var(--fg-muted);
 }
 
+.partial {
+	font-family: var(--font-mono);
+	font-size: 0.75rem;
+	padding: 1px 8px;
+	border-radius: 999px;
+	border: 1px dashed var(--line-strong);
+	color: var(--fg-soft);
+}
+
 .line {
 	color: var(--fg-soft);
 	max-width: 76ch;

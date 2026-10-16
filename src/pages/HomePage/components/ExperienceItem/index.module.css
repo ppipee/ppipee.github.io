@@ -46,9 +46,9 @@
 .body {
 	display: flex;
 	flex-direction: column;
-	gap: var(--space-6);
+	gap: var(--space-5);
 	min-width: 0;
-	padding-bottom: var(--space-7);
+	padding-bottom: var(--space-6);
 	border-bottom: 1px solid var(--line);
 }
 
@@ -135,29 +135,29 @@
 	padding-top: 2px;
 }
 
-.era {
+.eras {
+	list-style: none;
+	padding: 0;
 	display: flex;
 	flex-direction: column;
-	gap: var(--space-3);
-	padding: var(--space-5);
-	border-radius: var(--radius-lg);
-	background: var(--bg-raised);
-	box-shadow: var(--shadow-card);
 }
 
-.eraHead {
-	display: flex;
-	justify-content: space-between;
+.era {
+	display: grid;
+	grid-template-columns: minmax(0, 220px) minmax(0, 1fr) auto;
 	align-items: baseline;
-	gap: var(--space-3);
+	gap: var(--space-1) var(--space-5);
+	padding-block: var(--space-3);
+	border-top: 1px solid var(--line);
 }
 
 .eraName {
-	font-size: var(--text-md);
-	letter-spacing: -0.01em;
+	font-weight: 500;
 }
 
 .eraPeriod {
+	grid-column: 3;
+	grid-row: 1;
 	font-family: var(--font-mono);
 	font-size: var(--text-xs);
 	color: var(--fg-muted);
@@ -165,29 +165,10 @@
 }
 
 .focus {
+	grid-column: 2;
+	grid-row: 1;
 	color: var(--fg-muted);
-}
-
-.list {
-	padding-left: 1.1em;
-	display: flex;
-	flex-direction: column;
-	gap: var(--space-2);
-	color: var(--fg-soft);
-	max-width: 74ch;
-}
-
-.list li::marker {
-	color: var(--accent);
-}
-
-.more summary {
-	cursor: pointer;
-	width: fit-content;
-	color: var(--accent);
-	font-weight: 500;
-	margin-bottom: var(--space-3);
-	list-style-position: outside;
+	min-width: 0;
 }
 
 @media (max-width: 760px) {
@@ -203,6 +184,15 @@
 	}
 
 	.era {
-		padding: var(--space-4);
+		grid-template-columns: minmax(0, 1fr) auto;
+	}
+
+	.eraPeriod {
+		grid-column: 2;
+	}
+
+	.focus {
+		grid-column: 1 / -1;
+		grid-row: 2;
 	}
 }

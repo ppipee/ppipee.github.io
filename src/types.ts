@@ -77,4 +77,6 @@ export interface Proposal {
 	year: string
 	cvLine: string
 	resumeLine?: string
+	status?: 'shipped' | 'partial'
+	tools?: string[]
 }

@@ -1,5 +1,6 @@
 import clsx from 'clsx'
 
+import { HOME_LOCALES } from 'locales'
 import type { Proposal } from 'types'
 
 import styles from './index.module.css'
@@ -16,6 +17,7 @@ const ProposalItem = ({ proposal, className }: Props) => (
 			<div className={styles.head}>
 				<h3 className={styles.title}>{proposal.title}</h3>
 				<span className={styles.kind}>{proposal.kind}</span>
+				{proposal.status === 'partial' && <span className={styles.partial}>{HOME_LOCALES.partlyBuilt}</span>}
 			</div>
 			<p className={styles.line}>{proposal.cvLine}</p>
 		</div>

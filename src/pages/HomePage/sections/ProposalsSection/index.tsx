@@ -3,7 +3,7 @@ import { useMemo, useState } from 'react'
 
 import { ANALYTICS_EVENTS } from 'constants/analytics'
 import { SECTION_IDS } from 'constants/paths'
-import { PROPOSALS } from 'constants/proposals'
+import { OPEN_PROPOSALS } from 'constants/proposals'
 import { HOME_LOCALES } from 'locales'
 import type { Proposal } from 'types'
 import trackEvent from 'utils/trackEvent'
@@ -16,9 +16,9 @@ type Filter = Proposal['kind'] | 'All'
 
 const ProposalsSection = () => {
 	const [filter, setFilter] = useState<Filter>('All')
-	const kinds = useMemo(() => ['All', ...new Set(PROPOSALS.map((item) => item.kind))] as Filter[], [])
+	const kinds = useMemo(() => ['All', ...new Set(OPEN_PROPOSALS.map((item) => item.kind))] as Filter[], [])
 	const items = useMemo(
-		() => [...PROPOSALS].reverse().filter((item) => filter === 'All' || item.kind === filter),
+		() => OPEN_PROPOSALS.filter((item) => filter === 'All' || item.kind === filter),
 		[filter],
 	)
 
@@ -31,7 +31,7 @@ const ProposalsSection = () => {
 				aside={
 					<div className={styles.filters} role="group" aria-label="Filter by type">
 						{kinds.map((kind) => {
-							const count = kind === 'All' ? PROPOSALS.length : PROPOSALS.filter((item) => item.kind === kind).length
+							const count = kind === 'All' ? OPEN_PROPOSALS.length : OPEN_PROPOSALS.filter((item) => item.kind === kind).length
 
 							return (
 								<button

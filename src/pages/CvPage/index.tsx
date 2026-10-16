@@ -13,6 +13,12 @@ import { PRINT_LOCALES } from 'locales'
 
 import styles from './index.module.css'
 
+const STATUS_SUFFIX = {
+	shipped: ` · ${PRINT_LOCALES.shipped}`,
+	partial: ` · ${PRINT_LOCALES.partlyBuilt}`,
+	none: '',
+}
+
 const CvPage = () => (
 	<PrintSheet className={styles.sheet}>
 		<PrintHeader />
@@ -40,7 +46,7 @@ const CvPage = () => (
 		</PrintSection>
 		<PrintSection title={PRINT_LOCALES.proposals}>
 			{PROPOSALS.map((item) => (
-				<PrintJob key={item.title} title={item.title} subtitle={item.kind} period={item.year}>
+				<PrintJob key={item.title} title={item.title} subtitle={`${item.kind}${STATUS_SUFFIX[item.status ?? 'none']}`} period={item.year}>
 					<p className={styles.text}>{item.cvLine}</p>
 				</PrintJob>
 			))}

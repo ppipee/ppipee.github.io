@@ -16,3 +16,26 @@
 	flex-direction: column;
 	gap: var(--space-7);
 }
+
+.aside {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: var(--space-1);
+}
+
+.cvLink {
+	color: var(--accent);
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.cvLink:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 680px) {
+	.aside {
+		align-items: flex-start;
+	}
+}

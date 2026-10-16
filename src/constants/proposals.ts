@@ -3,13 +3,16 @@ import type { Proposal } from 'types'
 export const PROPOSALS: Proposal[] = [
 	{
 		title: 'Kyo Rollup',
+		status: 'shipped',
+		tools: ['Rollup', 'esbuild', 'TypeScript'],
 		kind: 'Guide',
 		year: '2021',
 		cvLine:
-			'Designed and documented a shared Rollup preset library (CJS, ESM, UMD and dual builds) with plugins for package exports, NodeNext-safe type imports, source-map paths and lodash interop.',
+			'Built and documented a shared Rollup preset library (CJS, ESM, UMD and dual builds) with plugins for package exports, NodeNext-safe type imports, source-map paths and lodash interop.',
 	},
 	{
 		title: 'Wongnai dark mode (OKR Q1 2022)',
+		status: 'shipped',
 		kind: 'Tech design',
 		year: '2022',
 		cvLine:
@@ -17,6 +20,8 @@ export const PROPOSALS: Proposal[] = [
 	},
 	{
 		title: 'Cinnamon CLI and boilerplates (OKR Q2 2022)',
+		status: 'shipped',
+		tools: ['Node.js', 'CLI', 'npm'],
 		kind: 'Tech design',
 		year: '2022',
 		cvLine:
@@ -24,10 +29,12 @@ export const PROPOSALS: Proposal[] = [
 	},
 	{
 		title: 'LINE MAN Automate Script',
+		status: 'shipped',
+		tools: ['React', 'TypeScript', 'CI/CD'],
 		kind: 'RFC',
 		year: '2022',
 		cvLine:
-			'Co-authored the RFC for a VPN-only web app that lets operations staff run bulk coupon and reward scripts with their own admin token, replacing scripts only developers could run.',
+			'Co-authored the RFC for a VPN-only web app that lets operations staff run bulk coupon and reward scripts with their own admin token, replacing scripts only developers could run, then built the tool.',
 	},
 	{
 		title: 'Budibase hosting',
@@ -38,6 +45,8 @@ export const PROPOSALS: Proposal[] = [
 	},
 	{
 		title: 'New LINE MAN admin (React micro-frontends)',
+		status: 'shipped',
+		tools: ['Module federation', 'Vue 3', 'React', 'OIDC'],
 		kind: 'RFC',
 		year: '2023',
 		cvLine:
@@ -47,20 +56,25 @@ export const PROPOSALS: Proposal[] = [
 	},
 	{
 		title: 'Core Analytic',
+		status: 'shipped',
+		tools: ['TypeScript', 'Analytics'],
 		kind: 'Tech design',
 		year: '2023',
 		cvLine:
-			'Designed a shared analytics library for screen names and click sources (session-backed screen stack, previous-screen and view-time tracking).',
+			'Designed and built a shared analytics library for screen names and click sources (session-backed screen stack, previous-screen and view-time tracking).',
 	},
 	{
 		title: 'Google Fleet Engine trip tracking',
+		status: 'shipped',
+		tools: ['Google Maps', 'Fleet Engine', 'Service worker'],
 		kind: 'POC',
 		year: '2023',
 		cvLine:
-			'Prototyped live trip tracking on the web with Google On-Demand Rides and Deliveries (journey-sharing map, token fetching, request-header injection through a service worker).',
+			'Prototyped, then shipped live trip tracking on the web with Google On-Demand Rides and Deliveries (journey-sharing map, token fetching, request-header injection through a service worker).',
 	},
 	{
 		title: 'Web loading measurement',
+		status: 'partial',
 		kind: 'POC',
 		year: '2024',
 		cvLine:
@@ -68,6 +82,8 @@ export const PROPOSALS: Proposal[] = [
 	},
 	{
 		title: 'Steak Management',
+		status: 'shipped',
+		tools: ['Jotai', 'TanStack Query', 'TypeScript'],
 		kind: 'RFC',
 		year: '2024',
 		cvLine:
@@ -75,6 +91,8 @@ export const PROPOSALS: Proposal[] = [
 	},
 	{
 		title: 'Google Ad Manager on campaign pages',
+		status: 'shipped',
+		tools: ['Google Ad Manager', 'React'],
 		kind: 'POC',
 		year: '2024',
 		cvLine:
@@ -82,6 +100,7 @@ export const PROPOSALS: Proposal[] = [
 	},
 	{
 		title: 'VIP recurring subscription, frontend scope',
+		status: 'shipped',
 		kind: 'Tech design',
 		year: '2025',
 		cvLine:
@@ -103,6 +122,8 @@ export const PROPOSALS: Proposal[] = [
 	},
 	{
 		title: 'LMWN pnpm store and migration guide',
+		status: 'shipped',
+		tools: ['pnpm', 'GitLab CI', 'S3'],
 		kind: 'Guide',
 		year: '2025',
 		cvLine:
@@ -117,6 +138,8 @@ export const PROPOSALS: Proposal[] = [
 	},
 	{
 		title: 'Web E2E project structure',
+		status: 'shipped',
+		tools: ['Playwright', 'TypeScript'],
 		kind: 'Tech design',
 		year: '2025',
 		cvLine:
@@ -124,6 +147,8 @@ export const PROPOSALS: Proposal[] = [
 	},
 	{
 		title: 'Group Ordering split bill',
+		status: 'shipped',
+		tools: ['React', 'Payments'],
 		kind: 'POC',
 		year: '2025',
 		cvLine:
@@ -131,6 +156,8 @@ export const PROPOSALS: Proposal[] = [
 	},
 	{
 		title: 'Braze in the LINE MAN webview',
+		status: 'shipped',
+		tools: ['Braze', 'JWT', 'Analytics'],
 		kind: 'POC',
 		year: '2026',
 		cvLine:
@@ -138,10 +165,12 @@ export const PROPOSALS: Proposal[] = [
 	},
 	{
 		title: 'Frontend recruitment service',
+		status: 'shipped',
+		tools: ['Bun', 'Hono', 'Okta', 'LiteLLM'],
 		kind: 'RFC',
 		year: '2026',
 		cvLine:
-			'Proposed a service that issues temporary, budget-capped LLM keys to live-coding candidates behind Okta-protected admin APIs and a rate-limited completion proxy.',
+			'Proposed and built a service that issues temporary, budget-capped LLM keys to live-coding candidates behind Okta-protected admin APIs and a rate-limited completion proxy.',
 		resumeLine:
 			'Proposed and built a recruitment service that gives live-coding candidates temporary, budget-capped LLM access.',
 	},
@@ -177,3 +206,11 @@ export const RESUME_PROPOSAL_NAMES: Proposal[] = [
 	'Google Fleet Engine trip tracking',
 	'Core Analytic',
 ].map(findProposal)
+
+export const SHIPPED_IN_WORK = ['Wongnai dark mode (OKR Q1 2022)', 'VIP recurring subscription, frontend scope']
+
+export const BUILT_PROPOSALS: Proposal[] = PROPOSALS.filter(
+	(item) => item.status === 'shipped' && !SHIPPED_IN_WORK.includes(item.title),
+).reverse()
+
+export const OPEN_PROPOSALS: Proposal[] = PROPOSALS.filter((item) => item.status !== 'shipped').reverse()

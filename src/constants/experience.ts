@@ -10,12 +10,14 @@ export const EXPERIENCE: Experience[] = [
 		period: '2020 – Present',
 		logo: LmwnLogo,
 		summary:
-			'Joined Wongnai as a part-time frontend engineer in 2020 and went full-time in May 2021. Worked on Wongnai.com and its shared libraries, then moved to LINE MAN commerce in 2023.',
+			'Joined Wongnai Media as a Kasetsart University co-op intern in April 2020, stayed on part-time, and went full-time in May 2021. Worked on Wongnai.com and its shared libraries, then moved to LINE MAN commerce in 2023.',
 		promotions: [
 			{ title: 'Senior Software Engineer II', period: 'Feb 2026 – Present' },
 			{ title: 'Senior Software Engineer', period: 'Jul 2024 – Jan 2026' },
 			{ title: 'Junior Software Engineer II', period: 'Apr 2022 – Jun 2024' },
 			{ title: 'Junior Software Engineer', period: 'May 2021 – Mar 2022' },
+			{ title: 'Software Engineer (part-time)', period: 'Oct 2020 – Apr 2021' },
+			{ title: 'Software Engineer Intern (co-op)', period: 'Apr – Sep 2020' },
 		],
 		eras: [
 			{
@@ -82,10 +84,26 @@ export const EXPERIENCE: Experience[] = [
 				],
 			},
 			{
-				name: 'Wongnai Delivery (part-time)',
-				period: '2020 – Apr 2021',
+				name: 'Part-time',
+				period: 'Oct 2020 – Apr 2021',
 				resumeLimit: 0,
-				focus: 'Wongnai Delivery web, Wongnai.com deals and the Wongnai UI library',
+				focus: 'Wongnai.com deals, Half-Half co-payment and Design System 2.0',
+				highlights: [
+					'Redesigned the Wongnai.com deal detail page and added flash deals, vouchers and a new privilege modal.',
+					'Built early Ignite (Design System 2.0) components and added Half-Half co-payment support to Wongnai.com and Wongnai Delivery web.',
+				],
+				cvHighlights: [
+					'Redesigned the Wongnai.com deal detail page and added flash deals, vouchers and a new privilege modal.',
+					'Added Half-Half (Khon La Khrueng) co-payment support to Wongnai.com and Wongnai Delivery web.',
+					'Built early Ignite (Design System 2.0) components: dialog, snackbar and toast, searchable dropdown and color builders.',
+					'Added an image previewer, bottom sheet and responsive layout helpers to the Wongnai UI library, and a shared footer across Wongnai web apps.',
+				],
+			},
+			{
+				name: 'Internship (Kasetsart University co-op)',
+				period: 'Apr – Sep 2020',
+				resumeLimit: 0,
+				focus: 'Wongnai Delivery web and the Wongnai UI library, at Wongnai Media',
 				highlights: [
 					'Built the self-pickup ordering flow on Wongnai Delivery web (location, cart, checkout, payment and order tracking) in React SSR.',
 					'Added order history and reorder across the delivery web and shared modules, and contributed components to the Wongnai UI library.',
@@ -94,7 +112,6 @@ export const EXPERIENCE: Experience[] = [
 					'Built the self-pickup ordering flow on Wongnai Delivery web (location selection, cart, checkout, payment and live order tracking) in React SSR.',
 					'Added order history and reorder across the delivery web, shared modules and types, with a new BFF food-order endpoint.',
 					'Contributed photo grid, carousel, layout, modal, stepper and form components to the Wongnai UI library.',
-					'Redesigned the deal detail page and added credit-back and flash-deal experiences on Wongnai.com.',
 				],
 			},
 		],
@@ -157,3 +174,9 @@ export const EXPERIENCE: Experience[] = [
 		hideOnResume: true,
 	},
 ]
+
+export const RESUME_INTERNSHIP = {
+	role: 'Software Engineer, Frontend Intern (co-op)',
+	company: 'Wongnai Media, Kasetsart University co-op',
+	period: 'Apr – Sep 2020',
+}

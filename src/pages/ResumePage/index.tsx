@@ -3,7 +3,7 @@ import PrintJob from 'components/PrintJob'
 import PrintSection from 'components/PrintSection'
 import PrintSheet from 'components/PrintSheet'
 import { ACTIVITY_TOTAL } from 'constants/activity'
-import { EXPERIENCE } from 'constants/experience'
+import { EXPERIENCE, RESUME_INTERNSHIP } from 'constants/experience'
 import { PROFILE } from 'constants/profile'
 import { RESUME_PROPOSAL_NAMES, RESUME_PROPOSALS } from 'constants/proposals'
 import { RESUME_SKILLS } from 'constants/skills'
@@ -49,6 +49,7 @@ const ResumePage = () => (
 					</PrintJob>
 				),
 			)}
+			<PrintJob title={RESUME_INTERNSHIP.role} subtitle={RESUME_INTERNSHIP.company} period={RESUME_INTERNSHIP.period} />
 		</PrintSection>
 		<PrintSection title={PRINT_LOCALES.proposals}>
 			<ul className={styles.proposals}>

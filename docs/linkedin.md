@@ -112,9 +112,10 @@ Skills: React · TypeScript · Design Systems
 
 Company: **Wongnai Media** (now LINE MAN Wongnai). Or add it under LINE MAN Wongnai if you prefer one company block.
 
-### Software Engineer, Frontend Intern
+### Software Engineer, Frontend Intern (Co-op)
 Internship · Apr 2020 – Sep 2020
 
+Kasetsart University cooperative education (co-op) placement.
 • Built the self-pickup ordering flow on Wongnai Delivery web (location, cart, checkout, payment and live order tracking) in React SSR
 • Added order history and reorder across the delivery web, shared modules and a new BFF food-order endpoint
 • Contributed photo grid, carousel, layout, modal, stepper and form components to the Wongnai UI library

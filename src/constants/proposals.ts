@@ -203,8 +203,6 @@ export const RESUME_PROPOSAL_NAMES: Proposal[] = [
 	'Steak Management',
 	'Google Ad Manager on campaign pages',
 	'Web loading measurement',
-	'Google Fleet Engine trip tracking',
-	'Core Analytic',
 ].map(findProposal)
 
 export const SHIPPED_IN_WORK = ['Wongnai dark mode (OKR Q1 2022)', 'VIP recurring subscription, frontend scope']

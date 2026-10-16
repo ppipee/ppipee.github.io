@@ -1,0 +1,43 @@
+.root {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2mm;
+	break-inside: avoid;
+}
+
+.head {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	gap: 4mm;
+}
+
+.title {
+	font-weight: 500;
+	font-size: 10pt;
+}
+
+.subtitle {
+	font-weight: 300;
+	color: var(--fg-muted);
+}
+
+.period {
+	color: var(--fg-muted);
+	font-size: 8.5pt;
+	white-space: nowrap;
+	font-variant-numeric: tabular-nums;
+}
+
+.list {
+	padding-left: 4mm;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5mm;
+	font-size: 8.8pt;
+	line-height: 1.4;
+}
+
+.list li::marker {
+	color: var(--blue-300);
+}

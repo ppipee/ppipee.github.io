@@ -1,0 +1,75 @@
+@page {
+	size: A4;
+	margin: 13mm 15mm 12mm;
+}
+
+@media print {
+	.sheet {
+		width: auto;
+		min-height: 0;
+		padding: 0;
+	}
+}
+
+.text {
+	font-size: 9pt;
+	max-width: 74ch;
+}
+
+.note {
+	font-size: 8.5pt;
+	color: var(--fg-muted);
+}
+
+.job {
+	display: flex;
+	flex-direction: column;
+	gap: 3mm;
+}
+
+.table {
+	border-collapse: collapse;
+	font-size: 8.5pt;
+	font-variant-numeric: tabular-nums;
+	width: 100%;
+}
+
+.table th {
+	text-align: left;
+	font-weight: 500;
+	color: var(--fg-muted);
+	border-bottom: 0.75pt solid var(--ink-300);
+	padding: 0.8mm 3mm 0.8mm 0;
+}
+
+.table td {
+	border-bottom: 0.5pt solid var(--line);
+	padding: 0.8mm 3mm 0.8mm 0;
+}
+
+.total td {
+	font-weight: 500;
+	border-bottom: 0;
+}
+
+.skills {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.6mm;
+	font-size: 9pt;
+}
+
+.skills div {
+	display: grid;
+	grid-template-columns: 30mm minmax(0, 1fr);
+	gap: 3mm;
+}
+
+.skills dt {
+	color: var(--fg-muted);
+}
+
+.skills dd {
+	margin: 0;
+}

@@ -1,0 +1,16 @@
+.content {
+	max-width: var(--max-width);
+	margin: 0 auto;
+	padding: var(--space-6) max(16px, env(safe-area-inset-right, 0px)) var(--space-8) max(16px, env(safe-area-inset-left, 0px));
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-9);
+}
+
+.footer {
+	max-width: var(--max-width);
+	margin: 0 auto;
+	color: var(--fg-muted);
+	font-size: var(--text-xs);
+	padding: 0 max(16px, env(safe-area-inset-right, 0px)) calc(var(--space-6) + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
+}

@@ -1,0 +1,70 @@
+/* NOTE: Light is the base so print pages stay light; screen dark mode redefines tokens only. Accent descends from the original site's #0093E8. */
+:root {
+	--bg: #f6f7f9;
+	--bg-raised: #ffffff;
+	--surface: #eef1f5;
+	--fg: #0d1117;
+	--fg-soft: #2b323c;
+	--fg-muted: #5a6473;
+	--line: #e1e5eb;
+	--line-strong: #c9cfd8;
+	--accent: #0070c0;
+	--accent-fill: #0093e8;
+	--accent-soft: #e2f1fc;
+	--accent-ink: #ffffff;
+	--dot-off: #dde2e9;
+	--paper: #ffffff;
+	--ink-900: #0d1117;
+	--ink-300: #c9cfd8;
+	--blue-300: #8cd1f6;
+
+	--font-sans: 'Geist', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+	--font-mono: 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+	--text-xs: 0.8125rem;
+	--text-sm: 0.9375rem;
+	--text-md: 1.0625rem;
+	--text-lg: 1.375rem;
+	--text-xl: clamp(1.75rem, 3.2vw, 2.5rem);
+	--text-display: clamp(2.75rem, 7.4vw, 5.75rem);
+
+	--space-1: 4px;
+	--space-2: 8px;
+	--space-3: 12px;
+	--space-4: 16px;
+	--space-5: 24px;
+	--space-6: 32px;
+	--space-7: 48px;
+	--space-8: 80px;
+	--space-9: 136px;
+
+	--radius-sm: 8px;
+	--radius-md: 14px;
+	--radius-lg: 22px;
+
+	--shadow-card: 0 1px 2px rgb(13 17 23 / 0.06), 0 12px 32px -12px rgb(13 17 23 / 0.16);
+	--ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+	--max-width: 1120px;
+	--nav-height: 64px;
+	color-scheme: light;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	:root {
+		--bg: #0b0d10;
+		--bg-raised: #12161c;
+		--surface: #161b22;
+		--fg: #e9edf2;
+		--fg-soft: #c4ccd6;
+		--fg-muted: #8e99a8;
+		--line: #1f252e;
+		--line-strong: #2d3540;
+		--accent: #4cb4ff;
+		--accent-fill: #1f9cf0;
+		--accent-soft: #0f2a40;
+		--accent-ink: #04121f;
+		--dot-off: #1a2029;
+		--shadow-card: 0 1px 2px rgb(0 0 0 / 0.4), 0 16px 40px -16px rgb(0 0 0 / 0.6);
+		color-scheme: dark;
+	}
+}

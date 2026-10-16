@@ -1,0 +1,150 @@
+import BarcampLogo from 'assets/images/barcamp.png'
+import LmwnLogo from 'assets/images/lmwn.png'
+import WongnaiLogo from 'assets/images/wongnai.png'
+
+import type { Experience } from 'types'
+
+export const EXPERIENCE: Experience[] = [
+	{
+		company: 'LINE MAN Wongnai',
+		role: 'Software Engineer, Frontend',
+		period: 'Jan 2021 – Present',
+		logo: LmwnLogo,
+		summary:
+			'Part-time from January 2021, full-time from May 2021. Started on Wongnai.com and its shared libraries, then moved to LINE MAN commerce in 2023.',
+		eras: [
+			{
+				name: 'LINE MAN',
+				period: '2023 – Present',
+				focus: 'Commerce flows inside the LINE MAN app, shared SDK and platform tooling',
+				highlights: [
+					'Led frontend delivery of the LINE MAN VIP subscription: package landing, quote and checkout (QR PromptPay, K PLUS), VIP profile, and manage and cancel flows, later extended to a LINE Premium partnership.',
+					'Built Lock Promotion (Lock Deal) from scratch, then shipped bulk purchase, refunds, sorting, filters and flash-deal countdowns through Unleash A/B experiments.',
+					'Delivered Group Ordering across the webview, SDK and UI library, from the participant flow to split bill and billing options.',
+					'Built payment integrations: TrueMoney on the core SDK and the v2 Select Payment page used by deals, VIP and packages.',
+					'Set up the micro-frontend platform behind the new LINE MAN admin, and led the move from Yarn to pnpm across 10+ repositories.',
+				],
+				cvHighlights: [
+					'Led frontend delivery of the LINE MAN VIP subscription end to end: package landing and detail, quote and checkout (QR PromptPay, K PLUS, payment pre-selection), VIP profile, and manage and cancel flows across the webview, shared SDK, UI and type libraries.',
+					'Extended VIP into a LINE Premium partnership with a redemption subscription type, API-driven bonus benefits and reusable partnership cards.',
+					'Built Lock Promotion (Lock Deal) from scratch: quote, order creation and detail, My Lock Promotion, deeplink highlighting and payment error fallbacks. Then shipped the grid redesign, sorting and sort-by filter, flash-deal countdown, and bulk purchase, refund and badge flows, each rolled out through Unleash A/B experiments with analytics.',
+					'Delivered the frontend of Group Ordering across the webview, SDK and UI library: participant flow (shared cart, order summary, live order status, host notifications), then split bill and billing options.',
+					'Built payment integrations: TrueMoney on the core SDK, the v2 Select Payment page (LINE Pay wallet, Rabbit LINE Pay, credit card, auto-registration, unified error handling) and QR PromptPay payment for packages.',
+					'Built the LINE Pay digital-wallet merchant KYM flow: camera capture and cropping, ID card, selfie and bank book verification, OTP, pre-registration, application status and QR code pages.',
+					'Built core pieces of the new LIFF food ordering (pin address, cart and quote sync, payment app integration), then migrated the remaining LIFF pages to React 18 with code splitting and shipped self pickup on LIFF.',
+					'Shipped Single Meal demand shaping, Menu Collection pages with Google Ad Manager banners, and Braze in-app messaging for the webview (SDK controller, auth, message sanitizing, kill switch).',
+					'Set up the micro-frontend platform behind the new LINE MAN admin (module federation, Vue 3 and React fragments, shared OIDC auth, CI/CD, Sentry) and moved users off the legacy admin with a remote-config redirect.',
+					'Built a design and prototyping playground: monorepo, playground engine with design inspector and docs matrix, about 60 migrated design-system components and production screens, and a flow mode with flow maps.',
+					'Built Steak Management v2, a shared state and data-access library on Jotai and TanStack Query, and used it to extract feature modules in the webview.',
+					'Led the Yarn-to-pnpm migration across 10+ repositories with an internal package store and supply-chain safeguards, moved shared libraries to Rolldown, and introduced versioned OTA deploys.',
+					'Improved release quality: single-branch CI/CD, shared release and revert jobs, a Slack and GitLab release-alert tool, and a Playwright E2E monorepo with parallel CI.',
+					'Brought LINE MAN Design System 3.0 into @lineman/ui and migrated consuming apps.',
+				],
+			},
+			{
+				name: 'Wongnai',
+				period: '2021 – 2022',
+				resumeLimit: 3,
+				focus: 'Wongnai.com, E-Commerce, design systems and internal tools',
+				highlights: [
+					'Delivered the Business Menu epic on Wongnai.com and the E-Commerce home revamp, Deal 2.0 order pages, and deal, voucher and privilege flows.',
+					'Built components and design tokens for Design System 2.0 and delivered Wongnai dark mode end to end.',
+					'Built an internal operations automation tool for LINE MAN (bulk coupon, reward, banner and price-engine scripts).',
+					'Fixed penetration-test findings (stored and DOM-based XSS) and gated analytics and ads on cookie consent for PDPA across four web apps.',
+				],
+				cvHighlights: [
+					'Delivered the Business Menu epic on Wongnai.com: recommended menu, menu, menu item and photo pages, backed by new BFF APIs, plus a redesigned review section.',
+					'Built E-Commerce experiences: the home landing revamp with section-level tracking, Deal 2.0 order history and details, and deal, voucher and privilege flows across web, delivery web and the BFF.',
+					'Built components, design tokens, atomic CSS and theming for Ignite (Design System 2.0) and migrated product pages onto it.',
+					'Delivered Wongnai dark mode end to end: design-system colour migration, a dark-mode controller, a display-setting API in the Go gateway, and the user-facing theme setting.',
+					'Built an internal LINE MAN operations automation tool from scratch: bulk coupon, reward, banner and price-engine scripts with audit logs, page-level authorization, Slack notifications and run reports.',
+					'Created kyo-rollup, a shared Rollup and esbuild build package, and rolled it out across the icons, hooks, utils, UI and shared-module libraries.',
+					'Built a Chrome extension for inspecting and testing analytics events on the Wongnai web.',
+					'Fixed web penetration-test findings (stored and DOM-based XSS, autocomplete on sensitive forms) and gated analytics trackers and ads on cookie consent for PDPA across four web apps.',
+					'Built the LMWN careers website.',
+				],
+			},
+		],
+	},
+	{
+		company: 'Siriraj e-Portfolio (freelance)',
+		role: 'Lead Frontend Developer',
+		period: 'Feb 2020 – Jul 2023',
+		summary:
+			'Web e-portfolio and assessment platform for Siriraj medical students and residents, with separate student, teacher and admin views. Wrote 688 of the project’s 732 commits.',
+		eras: [
+			{
+				name: 'Siriraj e-Portfolio',
+				period: '2020 – 2023',
+				resumeLimit: 1,
+				focus: 'React 17, TypeScript, MUI 5, MobX and Recoil, Chart.js, pdfmake, Docker',
+				highlights: [
+					'Built the assessment flows (EPA, DOPS and procedural skills), exams and 360-degree evaluations, mentorship appointments, and a research timeline.',
+					'Generated student transcripts as PDFs and added progression, radar and grading charts.',
+				],
+				cvHighlights: [
+					'Built the assessment flows (EPA, DOPS and procedural skills), exams and revision exams, and 360-degree evaluations with full create, edit and review screens.',
+					'Built mentorship appointments, mentee pages and templates, and revamped the research module with a timeline.',
+					'Generated student transcripts as PDFs and added progression, radar and grading charts.',
+					'Set up releases with semantic versioning, Docker and nginx hosting, Sentry and GA4, and upgraded to React 17, MUI 5 and webpack 5 with code splitting and caching.',
+					'Co-wrote the role-based product specs (admin, student, teacher) for the phase 2 modules.',
+				],
+			},
+		],
+	},
+	{
+		company: 'Seek (freelance)',
+		role: 'Frontend Developer',
+		period: 'Jun – Oct 2022',
+		summary: 'Customer website for an activity and event booking platform, built by a multi-developer team.',
+		eras: [
+			{
+				name: 'Seek web',
+				period: '2022',
+				focus: 'Next.js 12, React 18, TypeScript, react-query, styled-components',
+				highlights: [
+					'Built home banners, profile and children management, and the order participant and payment forms, with server-side rendering and cached data fetching.',
+				],
+				cvHighlights: [
+					'Built home banners, navigation and menu templates, profile and children management, and the order participant and payment forms.',
+					'Added server-side rendering with react-query hydration and cached requests, fixed SSR cookie handling, and added SEO meta tags.',
+					'Added a number input and icons to the shared Seek design-system package.',
+				],
+			},
+		],
+	},
+	{
+		company: 'Barcamp Bangkhen 2020',
+		role: 'Software Engineer, Frontend Architecture',
+		period: 'Oct – Nov 2020',
+		logo: BarcampLogo,
+		summary: 'Set up the frontend system and core pages for the Barcamp Bangkhen website.',
+		eras: [],
+		hideOnResume: true,
+	},
+	{
+		company: 'Wongnai Media',
+		role: 'Software Engineer, Frontend Intern',
+		period: 'Apr – Sep 2020',
+		logo: WongnaiLogo,
+		summary: 'Built the self-pickup ordering flow on Wongnai Delivery web and components for the Wongnai UI library.',
+		eras: [
+			{
+				name: 'Internship',
+				period: '2020',
+				resumeLimit: 1,
+				focus: 'Wongnai Delivery web',
+				highlights: [
+					'Built the self-pickup ordering flow on Wongnai Delivery web (location, cart, checkout, payment and order tracking) in React SSR.',
+					'Added order history and reorder across the delivery web and shared modules, and contributed components to the Wongnai UI library.',
+				],
+				cvHighlights: [
+					'Built the self-pickup ordering flow on Wongnai Delivery web (location selection, cart, checkout, payment and live order tracking) in React SSR.',
+					'Added order history and reorder across the delivery web, shared modules and types, with a new BFF food-order endpoint.',
+					'Contributed photo grid, carousel, layout, modal, stepper and form components to the Wongnai UI library.',
+					'Redesigned the deal detail page and added credit-back and flash-deal experiences on Wongnai.com.',
+				],
+			},
+		],
+	},
+]

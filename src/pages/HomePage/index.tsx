@@ -1,25 +1,33 @@
-import useImpressTracker from 'common/hooks/useImpressTracker'
-import React from 'react'
+import { HOME_LOCALES } from 'locales'
 
-import Header from './components/Header'
-import PersonalInformation from './components/PersonalInformation'
-import Project from './components/Project'
-import Skill from './components/Skill'
-import WorkExperience from './components/WorkExperience'
-import { ContainerWrapper } from './styled'
+import styles from './index.module.css'
+import ContactSection from './sections/ContactSection'
+import ExperienceSection from './sections/ExperienceSection'
+import Hero from './sections/Hero'
+import Ledger from './sections/Ledger'
+import Navbar from './sections/Navbar'
+import ProjectsSection from './sections/ProjectsSection'
+import ProposalsSection from './sections/ProposalsSection'
+import SkillsSection from './sections/SkillsSection'
 
-const HomePage = () => {
-	useImpressTracker()
-
-	return (
-		<ContainerWrapper>
-			<Header />
-			<PersonalInformation />
-			<Skill />
-			<WorkExperience />
-			<Project />
-		</ContainerWrapper>
-	)
-}
+const HomePage = () => (
+	<>
+		<Navbar />
+		<main>
+			<Hero />
+			<div className={styles.content}>
+				<Ledger />
+				<ExperienceSection />
+				<ProposalsSection />
+				<ProjectsSection />
+				<SkillsSection />
+				<ContactSection />
+			</div>
+		</main>
+		<footer className={styles.footer}>
+			<p>{HOME_LOCALES.footer}</p>
+		</footer>
+	</>
+)
 
 export default HomePage

@@ -1,0 +1,54 @@
+@page {
+	size: A4;
+	margin: 0;
+}
+
+.summary {
+	font-size: 9.5pt;
+	max-width: 70ch;
+}
+
+.line {
+	font-size: 9pt;
+}
+
+.proposals {
+	padding-left: 4mm;
+	display: flex;
+	flex-direction: column;
+	gap: 0.8mm;
+	font-size: 9pt;
+}
+
+.proposals li::marker {
+	color: var(--blue-300);
+}
+
+.skills {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.6mm;
+	font-size: 9pt;
+}
+
+.skills div {
+	display: grid;
+	grid-template-columns: 28mm minmax(0, 1fr);
+	gap: 3mm;
+}
+
+.skills dt {
+	color: var(--fg-muted);
+}
+
+.skills dd {
+	margin: 0;
+}
+
+.more {
+	margin-top: auto;
+	text-align: right;
+	font-size: 8pt;
+	color: var(--fg-muted);
+}

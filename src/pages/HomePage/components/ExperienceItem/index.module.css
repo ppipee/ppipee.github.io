@@ -1,0 +1,145 @@
+.root {
+	display: grid;
+	grid-template-columns: 200px minmax(0, 1fr);
+	gap: var(--space-7);
+	position: relative;
+}
+
+.rail {
+	position: relative;
+}
+
+.sticky {
+	position: sticky;
+	top: calc(var(--nav-height) + var(--space-6));
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-3);
+}
+
+.logo {
+	width: 56px;
+	height: 56px;
+	border-radius: var(--radius-md);
+	background: var(--paper);
+	border: 1px solid var(--line);
+	display: grid;
+	place-items: center;
+	padding: 6px;
+}
+
+.logo:empty {
+	display: none;
+}
+
+.logo img {
+	max-height: 100%;
+	object-fit: contain;
+}
+
+.period {
+	font-family: var(--font-mono);
+	font-size: var(--text-xs);
+	color: var(--fg-muted);
+}
+
+.body {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-6);
+	min-width: 0;
+	padding-bottom: var(--space-7);
+	border-bottom: 1px solid var(--line);
+}
+
+.head {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-2);
+}
+
+.role {
+	font-size: var(--text-lg);
+}
+
+.company {
+	color: var(--accent);
+	font-weight: 500;
+}
+
+.summary {
+	color: var(--fg-muted);
+	max-width: 64ch;
+}
+
+.era {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-3);
+	padding: var(--space-5);
+	border-radius: var(--radius-lg);
+	background: var(--bg-raised);
+	box-shadow: var(--shadow-card);
+}
+
+.eraHead {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	gap: var(--space-3);
+}
+
+.eraName {
+	font-size: var(--text-md);
+	letter-spacing: -0.01em;
+}
+
+.eraPeriod {
+	font-family: var(--font-mono);
+	font-size: var(--text-xs);
+	color: var(--fg-muted);
+	white-space: nowrap;
+}
+
+.focus {
+	color: var(--fg-muted);
+}
+
+.list {
+	padding-left: 1.1em;
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-2);
+	color: var(--fg-soft);
+	max-width: 74ch;
+}
+
+.list li::marker {
+	color: var(--accent);
+}
+
+.more summary {
+	cursor: pointer;
+	width: fit-content;
+	color: var(--accent);
+	font-weight: 500;
+	margin-bottom: var(--space-3);
+	list-style-position: outside;
+}
+
+@media (max-width: 760px) {
+	.root {
+		grid-template-columns: 1fr;
+		gap: var(--space-4);
+	}
+
+	.sticky {
+		position: static;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.era {
+		padding: var(--space-4);
+	}
+}

@@ -1,0 +1,49 @@
+/* NOTE: Everything is visible at rest; scroll-driven reveals only run where the browser supports view timelines and motion is allowed. */
+@media (prefers-reduced-motion: no-preference) {
+	@supports (animation-timeline: view()) {
+		.reveal {
+			animation: reveal-up linear both;
+			animation-timeline: view();
+			animation-range: entry 0% entry 45%;
+		}
+	}
+
+	.intro {
+		animation: intro-up 900ms var(--ease-out) both;
+		animation-delay: calc(var(--i, 0) * 90ms + 80ms);
+	}
+
+	.mask {
+		display: inline-block;
+		overflow: clip;
+		vertical-align: bottom;
+		padding-bottom: 0.08em;
+	}
+
+	.mask > span {
+		display: inline-block;
+		animation: mask-up 1000ms var(--ease-out) both;
+		animation-delay: calc(var(--i, 0) * 110ms + 60ms);
+	}
+}
+
+@keyframes reveal-up {
+	from {
+		opacity: 0;
+		transform: translateY(28px);
+	}
+}
+
+@keyframes intro-up {
+	from {
+		opacity: 0;
+		transform: translateY(16px);
+		filter: blur(6px);
+	}
+}
+
+@keyframes mask-up {
+	from {
+		transform: translateY(105%);
+	}
+}

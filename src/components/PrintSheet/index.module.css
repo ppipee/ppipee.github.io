@@ -1,0 +1,17 @@
+.root {
+	width: 210mm;
+	min-height: 297mm;
+	margin: 0 auto;
+	padding: 11mm 14mm 9mm;
+	background: var(--paper);
+	display: flex;
+	flex-direction: column;
+	gap: 3.4mm;
+}
+
+@media screen {
+	.root {
+		margin-block: 24px;
+		box-shadow: var(--shadow-card);
+	}
+}

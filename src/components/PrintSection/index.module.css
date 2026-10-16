@@ -1,0 +1,19 @@
+.root {
+	display: grid;
+	grid-template-columns: 30mm minmax(0, 1fr);
+	gap: 5mm;
+}
+
+.title {
+	font-size: 10pt;
+	font-weight: 500;
+	color: var(--accent);
+	padding-top: 0.5mm;
+}
+
+.body {
+	display: flex;
+	flex-direction: column;
+	gap: 2.4mm;
+	min-width: 0;
+}

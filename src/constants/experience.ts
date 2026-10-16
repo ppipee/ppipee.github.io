@@ -14,8 +14,10 @@ export const EXPERIENCE: Experience[] = [
 		promotions: [
 			{ title: 'Senior Software Engineer II', period: 'Feb 2026 – Present' },
 			{ title: 'Senior Software Engineer', period: 'Jul 2024 – Jan 2026' },
-			{ title: 'Junior Software Engineer', period: 'May 2021 – Jun 2024' },
-		],		eras: [
+			{ title: 'Junior Software Engineer II', period: 'Apr 2022 – Jun 2024' },
+			{ title: 'Junior Software Engineer', period: 'May 2021 – Mar 2022' },
+		],
+		eras: [
 			{
 				name: 'LINE MAN',
 				period: '2023 – Present',

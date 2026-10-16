@@ -30,6 +30,10 @@ export const HOME_LOCALES = {
 	contactTitle: 'Open to a conversation',
 	contactLede: 'Hiring for frontend, design systems or product engineering? I reply to email within a couple of days.',
 	footer: 'Built with React 19, Vite and TypeScript. The resume and CV PDFs come from the same data as this page.',
+	privacy: 'This site uses Google Analytics to count visits. No data is shared or sold.',
+	previewAlt: (name: string) => `First page of the ${name}`,
+	resumeLabel: 'Resume · 1 page',
+	cvLabel: 'Full CV · all projects',
 }
 
 export const PRINT_LOCALES = {

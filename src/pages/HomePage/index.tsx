@@ -26,6 +26,7 @@ const HomePage = () => (
 		</main>
 		<footer className={styles.footer}>
 			<p>{HOME_LOCALES.footer}</p>
+			<p>{HOME_LOCALES.privacy}</p>
 		</footer>
 	</>
 )

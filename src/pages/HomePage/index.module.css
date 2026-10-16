@@ -8,6 +8,9 @@
 }
 
 .footer {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-1);
 	max-width: var(--max-width);
 	margin: 0 auto;
 	color: var(--fg-muted);

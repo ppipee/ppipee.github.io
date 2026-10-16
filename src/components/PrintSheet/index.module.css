@@ -15,3 +15,8 @@
 		box-shadow: var(--shadow-card);
 	}
 }
+
+:global(:root[data-preview]) .root {
+	margin: 0;
+	box-shadow: none;
+}

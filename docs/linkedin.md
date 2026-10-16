@@ -21,7 +21,7 @@ Things I've built or led:
 • The micro-frontend platform behind the new LINE MAN admin, from the RFC to the production hosting re-architecture
 • Steak Management, an in-house Jotai and TanStack Query library for state and data access
 • The move from Yarn to pnpm across 10+ repositories, with a shared package store and CI cache
-• A design and prototyping playground with a design inspector and about 60 migrated components
+• An internal design and prototyping platform with a design inspector and about 60 migrated components
 • A recruitment service that gives live-coding candidates temporary, budget-capped LLM access
 • Wongnai dark mode, across 1,743 CSS colours in 728 files
 
@@ -49,9 +49,11 @@ Full-time · Feb 2026 – Present · Bangkok, Thailand
 • Shipped Group Ordering split bill and billing options, and Single Meal demand shaping (empty states, badges, onboarding tooltips, dynamic navigation)
 • Brought Braze in-app messaging to the LINE MAN webview: SDK controller, auth, message sanitizing and a kill switch
 • Built Steak Management v2 and used it to extract feature modules in the webview; moved shared libraries to Rolldown and introduced versioned OTA deploys
-• Built a design and prototyping playground from scratch: monorepo, playground engine with design inspector and docs matrix, and a flow mode with flow maps
+• Built an internal design and prototyping platform from scratch: monorepo, playground engine with design inspector and docs matrix, and a flow mode with flow maps
 • Proposed and built a recruitment service for frontend live-coding interviews: temporary, budget-capped LLM keys per candidate, an Okta-protected admin API and a rate-limited completion proxy
-• Wrote agent skills and rules (Claude Code, Cursor) for the playground, E2E and webview repos, and AI code review (Bugbot) guidelines across the webview, SDK and UI library
+• Wrote agent skills and rules (Claude Code, Cursor) for the prototyping platform, E2E and webview repos, and AI code review (Bugbot) guidelines across the webview, SDK and UI library
+• Automated team routines with a Slack bot: pending-review reminders and a change-request approval flow for LINE MAN web
+• Added E2E coverage for menu collection, Single Meal and payment pages
 
 Skills: TypeScript · React · Frontend Architecture · Developer Tooling · AI-assisted Development
 
@@ -66,6 +68,8 @@ Full-time · Jul 2024 – Jan 2026
 • Built a universal-link landing app with remote-config templates and a LIFF fallback, and added Google Ad Manager banners to campaign pages
 • Shipped self pickup on LIFF and restructured the Playwright E2E monorepo with reusable journeys and parallel CI
 • Built LMWN Cafe with Okta login and a menu collection page
+• Introduced Jitsu event tracking for menu collection pages, LM Packages and Food LIFF, built the 2025 Food coupon book, and rebuilt the careers site as Careers V2
+• Designed the 2025 frontend take-home assignment for hiring and added E2E coverage for pickup on LIFF
 
 Skills: TypeScript · React · Payments · Micro-frontends · pnpm
 
@@ -74,11 +78,11 @@ Full-time · Apr 2022 – Jun 2024
 
 • Built an internal operations automation tool for LINE MAN from scratch: bulk coupon, reward, banner and price-engine scripts with audit logs, page-level authorization and Slack notifications
 • Built the Wongnai.com E-Commerce home revamp and Deal 2.0 order pages, fixed penetration-test findings (stored and DOM-based XSS) and gated analytics and ads on cookie consent for PDPA across four web apps
-• Moved to LINE MAN in 2023 and delivered the frontend of Group Ordering (participant flow, shared cart, live order status, host notifications) across the webview, SDK and UI library
+• Moved to LINE MAN in 2023 and delivered the frontend of Group Ordering (participant flow, shared cart, live order status, host notifications, analytics) across the webview, SDK and UI library
 • Built core pieces of the new LIFF food ordering (pin address, cart and quote sync, payment app) and migrated the remaining LIFF pages to React 18
-• Wrote the RFC for the new LINE MAN admin and set up its micro-frontend platform (module federation, Vue 3 and React fragments, shared OIDC auth, CI/CD, Sentry)
-• Shipped QR PromptPay payment for LM Packages and brought Design System 3.0 into @lineman/ui
-• Improved frontend releases: single-branch CI/CD, shared release and revert jobs, and a Slack and GitLab release-alert tool
+• Wrote the RFC for the new LINE MAN admin and set up its micro-frontend platform (single-spa, Vue 3 and React fragments, shared OIDC auth, CI/CD, Sentry)
+• Shipped QR PromptPay payment for LM Packages, revamped the package detail and condition views with a summary-of-changes page and package tracking, and brought Design System 3.0 into @lineman/ui
+• Improved frontend releases with shared GitLab CI/CD templates: single-branch CI/CD, release and revert jobs, and a Slack and GitLab release-alert tool
 • Built a Rollup data-qa plugin and rolled it out across the shared build config and component libraries for QA automation
 
 Skills: React · Vue.js · Micro-frontends · Design Systems · LINE LIFF
@@ -89,7 +93,8 @@ Full-time · May 2021 – Mar 2022
 • Delivered the Business Menu epic on Wongnai.com (recommended menu, menu, menu item and photo pages) and deal, voucher and privilege experiences
 • Built components, design tokens and theming for Ignite (Design System 2.0) and delivered Wongnai dark mode end to end
 • Created kyo-rollup, a shared Rollup and esbuild build package used across the Wongnai frontend libraries
-• Built the LMWN careers website and a Chrome extension for inspecting analytics events
+• Built the LMWN careers website and a Chrome extension for inspecting analytics events, and instrumented impression tracking across Wongnai.com
+• Contributed to the Vue-to-React migration of the LINE MAN food LIFF (OKR Q3 2021)
 
 Skills: React · Design Systems · Rollup · styled-components
 

@@ -60,6 +60,14 @@ export const WORK_PROJECTS: Project[] = [
 			'Know-your-merchant web flow: ID card, selfie and bank book capture with cropping, OTP, pre-registration, application status and the merchant QR code.',
 	},
 	{
+		name: 'Design and prototyping platform',
+		context: 'Internal tool',
+		period: '2026',
+		tools: ['React', 'Vite', 'Monorepo', 'Agent skills'],
+		description:
+			'Prototyping workspace for LINE MAN screens built from real design-system components, with a design inspector, docs matrix, flow mode with flow maps, and about 60 migrated components and production screens.',
+	},
+	{
 		name: 'LMWN Careers',
 		context: 'careers.lmwn.com',
 		period: '2021 – 2024',

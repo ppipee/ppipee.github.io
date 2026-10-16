@@ -46,7 +46,7 @@ export const PROPOSALS: Proposal[] = [
 	{
 		title: 'New LINE MAN admin (React micro-frontends)',
 		status: 'shipped',
-		tools: ['Module federation', 'Vue 3', 'React', 'OIDC'],
+		tools: ['single-spa', 'Vue 3', 'React', 'OIDC'],
 		kind: 'RFC',
 		year: '2023',
 		cvLine:

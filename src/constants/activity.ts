@@ -9,7 +9,7 @@ export const ACTIVITY: ActivityYear[] = [
 	{ year: 2023, mergeRequests: 373, merged: 342, repositories: 39, focus: 'Group Ordering, LIFF food ordering' },
 	{ year: 2024, mergeRequests: 361, merged: 345, repositories: 42, focus: 'LINE Pay merchant KYM, new admin' },
 	{ year: 2025, mergeRequests: 461, merged: 433, repositories: 37, focus: 'VIP subscription, Lock Promotion' },
-	{ year: 2026, mergeRequests: 560, merged: 501, repositories: 37, focus: 'Lock Deal, payments, UX Playground' },
+	{ year: 2026, mergeRequests: 560, merged: 501, repositories: 37, focus: 'Lock Deal, payments, prototyping platform' },
 ]
 
 export const ACTIVITY_TOTAL = { mergeRequests: 2414, merged: 2255, repositories: 98 }

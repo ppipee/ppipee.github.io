@@ -6,8 +6,8 @@ import styles from './index.module.css'
 const LINKS = [
 	{ id: SECTION_IDS.ledger, label: NAV_LOCALES.work },
 	{ id: SECTION_IDS.experience, label: NAV_LOCALES.experience },
-	{ id: SECTION_IDS.proposals, label: NAV_LOCALES.proposals },
 	{ id: SECTION_IDS.projects, label: NAV_LOCALES.projects },
+	{ id: SECTION_IDS.proposals, label: NAV_LOCALES.proposals },
 ]
 
 const Navbar = () => (

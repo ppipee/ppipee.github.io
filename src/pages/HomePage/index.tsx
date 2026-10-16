@@ -18,8 +18,8 @@ const HomePage = () => (
 			<div className={styles.content}>
 				<Ledger />
 				<ExperienceSection />
-				<ProposalsSection />
 				<ProjectsSection />
+				<ProposalsSection />
 				<SkillsSection />
 				<ContactSection />
 			</div>

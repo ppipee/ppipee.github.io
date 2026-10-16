@@ -1,7 +1,7 @@
 export const NAV_LOCALES = {
 	work: 'Work',
 	experience: 'Experience',
-	proposals: 'RFCs',
+	proposals: 'Proposals',
 	projects: 'Projects',
 	resume: 'Resume',
 }

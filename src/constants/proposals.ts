@@ -41,9 +41,9 @@ export const PROPOSALS: Proposal[] = [
 		kind: 'RFC',
 		year: '2023',
 		cvLine:
-			'Co-authored the RFC and schema design for a micro-frontend admin shell that loads the legacy Vue 2 admin and the automation tool under one auth, then led the migration, shared state, CI and domain move.',
+			'Wrote the RFC and schema design for a micro-frontend admin shell that loads the legacy Vue 2 admin and the automation tool under one auth, then led the migration, shared state, CI and domain move.',
 		resumeLine:
-			'Co-authored the RFC for the new LINE MAN admin (micro-frontend shell over the legacy Vue 2 admin) and led its migration, CI and production hosting re-architecture.',
+			'Wrote the RFC for the new LINE MAN admin (micro-frontend shell over the legacy Vue 2 admin) and led its migration, CI and production hosting re-architecture.',
 	},
 	{
 		title: 'Core Analytic',
@@ -72,14 +72,13 @@ export const PROPOSALS: Proposal[] = [
 		year: '2024',
 		cvLine:
 			'Proposed replacing React Query plus Recoil with one in-house Jotai-based state and data library to remove cross-library sync renders; it later shipped as @lmwn/steak-management.',
-		resumeLine:
-			'Proposed and built @lmwn/steak-management, a Jotai-based state and data library that replaced React Query plus Recoil in the webview.',
 	},
 	{
 		title: 'Google Ad Manager on campaign pages',
 		kind: 'POC',
 		year: '2024',
-		cvLine: 'Designed an ad-banner section type for campaign pages backed by Google Ad Manager, including the admin config and ads.txt, then shipped it.',
+		cvLine:
+			'Designed an ad-banner section type for campaign pages backed by Google Ad Manager, including the admin config and ads.txt, then shipped it.',
 	},
 	{
 		title: 'VIP recurring subscription, frontend scope',
@@ -106,7 +105,8 @@ export const PROPOSALS: Proposal[] = [
 		title: 'LMWN pnpm store and migration guide',
 		kind: 'Guide',
 		year: '2025',
-		cvLine: 'Built and documented a shared pnpm package store and CI cache for frontend projects, with a step-by-step Yarn and npm migration guide.',
+		cvLine:
+			'Built and documented a shared pnpm package store and CI cache for frontend projects, with a step-by-step Yarn and npm migration guide.',
 	},
 	{
 		title: 'RFC template for LINE MAN Web',
@@ -119,7 +119,8 @@ export const PROPOSALS: Proposal[] = [
 		title: 'Web E2E project structure',
 		kind: 'Tech design',
 		year: '2025',
-		cvLine: 'Redesigned the Playwright E2E monorepo around page objects and reusable journeys built on fixtures so QA can write tests faster.',
+		cvLine:
+			'Redesigned the Playwright E2E monorepo around page objects and reusable journeys built on fixtures so QA can write tests faster.',
 	},
 	{
 		title: 'Group Ordering split bill',
@@ -148,11 +149,31 @@ export const PROPOSALS: Proposal[] = [
 		title: 'AI-generated E2E tests',
 		kind: 'POC',
 		year: '2026',
-		cvLine: 'Prototyped generating Playwright E2E tests from a screen recording with an AI agent following repo conventions.',
+		cvLine:
+			'Prototyped generating Playwright E2E tests from a screen recording with an AI agent following repo conventions.',
 	},
 ]
 
-export const RESUME_PROPOSALS: Proposal[] = PROPOSALS.filter((item) => item.resumeLine).map((item) => ({
-	...item,
-	resumeLine: `${item.resumeLine} (${item.kind}, ${item.year})`,
-}))
+const findProposal = (title: string) => {
+	const proposal = PROPOSALS.find((item) => item.title === title)
+	if (!proposal) throw new Error(`Unknown proposal: ${title}`)
+	return proposal
+}
+
+export const RESUME_PROPOSALS: Proposal[] = [
+	'New LINE MAN admin (React micro-frontends)',
+	'Frontend recruitment service',
+]
+	.map(findProposal)
+	.map((item) => ({ ...item, resumeLine: `${item.resumeLine} (${item.kind}, ${item.year})` }))
+
+export const RESUME_PROPOSAL_NAMES: Proposal[] = [
+	'Braze in the LINE MAN webview',
+	'Group Ordering split bill',
+	'styled-components to Linaria',
+	'Steak Management',
+	'Google Ad Manager on campaign pages',
+	'Web loading measurement',
+	'Google Fleet Engine trip tracking',
+	'Core Analytic',
+].map(findProposal)

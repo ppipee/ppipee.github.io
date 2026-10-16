@@ -6,7 +6,7 @@ import PrintSheet from 'components/PrintSheet'
 import { ACTIVITY_TOTAL } from 'constants/activity'
 import { EXPERIENCE } from 'constants/experience'
 import { PROFILE } from 'constants/profile'
-import { RESUME_PROPOSALS } from 'constants/proposals'
+import { RESUME_PROPOSAL_NAMES, RESUME_PROPOSALS } from 'constants/proposals'
 import { RESUME_SKILLS } from 'constants/skills'
 import { PRINT_LOCALES } from 'locales'
 
@@ -59,6 +59,10 @@ const ResumePage = () => (
 					<li key={item.title}>{item.resumeLine}</li>
 				))}
 			</ul>
+			<p className={styles.moreProposals}>
+				<span className={styles.moreLabel}>{PRINT_LOCALES.moreProposals}</span>{' '}
+				{RESUME_PROPOSAL_NAMES.map((item) => `${item.title} (${item.kind}, ${item.year})`).join(' · ')}
+			</p>
 		</PrintSection>
 		<PrintSection title={PRINT_LOCALES.skills}>
 			<dl className={styles.skills}>

@@ -41,6 +41,7 @@ export const PRINT_LOCALES = {
 	experience: 'Experience',
 	skills: 'Skills',
 	proposals: 'RFCs and POCs',
+	moreProposals: 'Also:',
 	work: 'Selected work',
 	projects: 'Projects',
 	education: 'Education',

@@ -58,3 +58,14 @@
 	flex-direction: column;
 	gap: 2mm;
 }
+
+.moreProposals {
+	font-size: 8.6pt;
+	line-height: 1.45;
+	color: var(--fg-muted);
+}
+
+.moreLabel {
+	color: var(--fg);
+	font-weight: 500;
+}

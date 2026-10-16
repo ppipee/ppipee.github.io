@@ -22,6 +22,7 @@ Things I've built or led:
 • Steak Management, an in-house Jotai and TanStack Query library for state and data access
 • The move from Yarn to pnpm across 10+ repositories, with a shared package store and CI cache
 • A design and prototyping playground with a design inspector and about 60 migrated components
+• A recruitment service that gives live-coding candidates temporary, budget-capped LLM access
 • Wongnai dark mode, across 1,743 CSS colours in 728 files
 
 I like writing things down before building them, so many of these started as an RFC or a proof of concept.
@@ -47,6 +48,7 @@ Full-time · Feb 2026 – Present · Bangkok, Thailand
 • Brought Braze in-app messaging to the LINE MAN webview: SDK controller, auth, message sanitizing and a kill switch
 • Built Steak Management v2 and used it to extract feature modules in the webview; moved shared libraries to Rolldown and introduced versioned OTA deploys
 • Built a design and prototyping playground from scratch: monorepo, playground engine with design inspector and docs matrix, and a flow mode with flow maps
+• Proposed and built a recruitment service for frontend live-coding interviews: temporary, budget-capped LLM keys per candidate, an Okta-protected admin API and a rate-limited completion proxy
 
 Skills: TypeScript · React · Frontend Architecture · Developer Tooling · A/B Testing
 

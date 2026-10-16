@@ -6,7 +6,7 @@ export const PROFILE: Profile = {
 	role: 'Senior Software Engineer II, Frontend',
 	location: 'Bangkok, Thailand',
 	summary:
-		'Frontend engineer at LINE MAN Wongnai since 2020. I build the commerce flows people use inside the LINE MAN app (subscriptions, deals, group orders and payments) and the shared SDKs, design systems and tooling other teams build on.',
+		'Software engineer at LINE MAN Wongnai since 2020, focused on frontend, frontend architecture and developer tooling. I build the commerce flows people use inside the LINE MAN app (subscriptions, deals, group orders and payments) and the shared SDKs, design systems and build tools other teams build on.',
 	contacts: [
 		{ label: 'Email', value: 'ppipee.kj@hotmail.com', href: 'mailto:ppipee.kj@hotmail.com' },
 		{ label: 'LinkedIn', value: 'linkedin.com/in/ppipee', href: 'https://linkedin.com/in/ppipee' },

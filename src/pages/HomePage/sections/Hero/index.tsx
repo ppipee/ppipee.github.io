@@ -2,9 +2,11 @@ import type { CSSProperties } from 'react'
 
 import ProfileImage from 'assets/images/profile.jpg'
 import { ACTIVITY_TOTAL } from 'constants/activity'
+import { ANALYTICS_EVENTS } from 'constants/analytics'
 import { CV_PDF_PATH, RESUME_PDF_PATH } from 'constants/paths'
 import { PROFILE } from 'constants/profile'
 import { HOME_LOCALES } from 'locales'
+import trackEvent from 'utils/trackEvent'
 
 import useCopyText from '../../hooks/useCopyText'
 import styles from './index.module.css'
@@ -47,7 +49,10 @@ const Hero = () => {
 							{HOME_LOCALES.downloadCv}
 						</a>
 						{email && (
-							<button type="button" className={styles.ghost} onClick={() => copy(email.value)}>
+							<button type="button" className={styles.ghost} onClick={() => {
+								copy(email.value)
+								trackEvent(ANALYTICS_EVENTS.copyEmail, { location: 'hero' })
+							}}>
 								{copied ? HOME_LOCALES.copied : email.value}
 							</button>
 						)}

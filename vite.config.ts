@@ -7,7 +7,7 @@ export default defineConfig({
 	base: '/',
 	plugins: [react()],
 	resolve: {
-		alias: [{ find: /^(constants|pages|components|styles|assets|locales|types)(\/.*)?$/, replacement: resolve(__dirname, 'src/$1$2') }],
+		alias: [{ find: /^(constants|pages|components|styles|assets|locales|types|utils)(\/.*)?$/, replacement: resolve(__dirname, 'src/$1$2') }],
 	},
 	build: {
 		rollupOptions: {

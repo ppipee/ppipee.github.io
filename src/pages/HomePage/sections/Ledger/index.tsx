@@ -2,8 +2,10 @@ import clsx from 'clsx'
 import { useState } from 'react'
 
 import { ACTIVITY, ACTIVITY_SOURCE, ACTIVITY_TOTAL } from 'constants/activity'
+import { ANALYTICS_EVENTS } from 'constants/analytics'
 import { SECTION_IDS } from 'constants/paths'
 import { HOME_LOCALES } from 'locales'
+import trackEvent from 'utils/trackEvent'
 
 import SectionHeading from '../../components/SectionHeading'
 import useMergeRequestField from '../../hooks/useMergeRequestField'
@@ -38,7 +40,10 @@ const Ledger = () => {
 								aria-pressed={activeYear === year.year}
 								onMouseEnter={() => setActiveYear(year.year)}
 								onFocus={() => setActiveYear(year.year)}
-								onClick={() => setActiveYear(activeYear === year.year ? null : year.year)}
+								onClick={() => {
+									setActiveYear(activeYear === year.year ? null : year.year)
+									trackEvent(ANALYTICS_EVENTS.selectYear, { year: year.year })
+								}}
 							>
 								<span className={styles.yearLabel}>{year.year}</span>
 								<span className={styles.yearCount}>{year.mergeRequests}</span>

@@ -1,6 +1,8 @@
+import { ANALYTICS_EVENTS } from 'constants/analytics'
 import { CV_PDF_PATH, RESUME_PDF_PATH, SECTION_IDS } from 'constants/paths'
 import { PROFILE } from 'constants/profile'
 import { HOME_LOCALES } from 'locales'
+import trackEvent from 'utils/trackEvent'
 
 import useCopyText from '../../hooks/useCopyText'
 import styles from './index.module.css'
@@ -20,7 +22,10 @@ const ContactSection = () => {
 					<a className={styles.email} href={email.href}>
 						{email.value}
 					</a>
-					<button type="button" className={styles.copy} onClick={() => copy(email.value)}>
+					<button type="button" className={styles.copy} onClick={() => {
+							copy(email.value)
+							trackEvent(ANALYTICS_EVENTS.copyEmail, { location: 'contact' })
+						}}>
 						{copied ? HOME_LOCALES.copied : HOME_LOCALES.copyEmail}
 					</button>
 				</div>

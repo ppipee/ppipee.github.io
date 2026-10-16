@@ -1,10 +1,12 @@
 import clsx from 'clsx'
 import { useMemo, useState } from 'react'
 
+import { ANALYTICS_EVENTS } from 'constants/analytics'
 import { SECTION_IDS } from 'constants/paths'
 import { PROPOSALS } from 'constants/proposals'
 import { HOME_LOCALES } from 'locales'
 import type { Proposal } from 'types'
+import trackEvent from 'utils/trackEvent'
 
 import ProposalItem from '../../components/ProposalItem'
 import SectionHeading from '../../components/SectionHeading'
@@ -37,7 +39,10 @@ const ProposalsSection = () => {
 									type="button"
 									className={clsx(styles.filter, filter === kind && styles.on)}
 									aria-pressed={filter === kind}
-									onClick={() => setFilter(kind)}
+									onClick={() => {
+										setFilter(kind)
+										trackEvent(ANALYTICS_EVENTS.filterProposals, { kind })
+									}}
 								>
 									{kind === 'All' ? HOME_LOCALES.proposalsAll : kind}
 									<span>{count}</span>

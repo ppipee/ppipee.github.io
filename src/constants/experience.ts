@@ -44,6 +44,7 @@ export const EXPERIENCE: Experience[] = [
 					'Led the Yarn-to-pnpm migration across 10+ repositories with an internal package store and supply-chain safeguards, moved shared libraries to Rolldown, and introduced versioned OTA deploys.',
 					'Improved release quality: single-branch CI/CD, shared release and revert jobs, a Slack and GitLab release-alert tool, and a Playwright E2E monorepo with parallel CI.',
 					'Brought LINE MAN Design System 3.0 into @lineman/ui and migrated consuming apps.',
+					'Built LMWN Cafe with Okta login and a menu collection page.',
 				],
 			},
 			{
@@ -65,6 +66,7 @@ export const EXPERIENCE: Experience[] = [
 					'Built an internal LINE MAN operations automation tool from scratch: bulk coupon, reward, banner and price-engine scripts with audit logs, page-level authorization, Slack notifications and run reports.',
 					'Created kyo-rollup, a shared Rollup and esbuild build package, and rolled it out across the icons, hooks, utils, UI and shared-module libraries.',
 					'Built a Chrome extension for inspecting and testing analytics events on the Wongnai web.',
+					'Built a Rollup data-qa plugin and rolled it out across the shared build config and component libraries for QA automation.',
 					'Fixed web penetration-test findings (stored and DOM-based XSS, autocomplete on sensitive forms) and gated analytics trackers and ads on cookie consent for PDPA across four web apps.',
 					'Built the LMWN careers website.',
 				],

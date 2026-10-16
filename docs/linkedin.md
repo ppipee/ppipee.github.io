@@ -1,6 +1,6 @@
 # LinkedIn copy
 
-Ready to paste. Character counts are under LinkedIn's limits (headline 220, About 2,600, each position 2,000).
+Ready to paste. Character counts are under LinkedIn's limits (headline 220, About 2,600, each position and project 2,000).
 Same facts as the site and CV; edit freely.
 
 ---
@@ -61,6 +61,8 @@ Full-time · Jul 2024 – Jan 2026
 • Built the LINE Pay digital-wallet merchant onboarding (KYM) flow: camera capture and cropping, ID card, selfie and bank book verification, OTP, application status and QR code pages
 • Led the Yarn-to-pnpm migration across 10+ repositories with an internal package store and supply-chain safeguards, and led the LINE MAN admin hosting re-architecture to production
 • Built a universal-link landing app with remote-config templates and a LIFF fallback, and added Google Ad Manager banners to campaign pages
+• Shipped self pickup on LIFF and restructured the Playwright E2E monorepo with reusable journeys and parallel CI
+• Built LMWN Cafe with Okta login and a menu collection page
 
 Skills: TypeScript · React · Payments · Micro-frontends · pnpm
 
@@ -73,6 +75,8 @@ Full-time · Apr 2022 – Jun 2024
 • Built core pieces of the new LIFF food ordering (pin address, cart and quote sync, payment app) and migrated the remaining LIFF pages to React 18
 • Wrote the RFC for the new LINE MAN admin and set up its micro-frontend platform (module federation, Vue 3 and React fragments, shared OIDC auth, CI/CD, Sentry)
 • Shipped QR PromptPay payment for LM Packages and brought Design System 3.0 into @lineman/ui
+• Improved frontend releases: single-branch CI/CD, shared release and revert jobs, and a Slack and GitLab release-alert tool
+• Built a Rollup data-qa plugin and rolled it out across the shared build config and component libraries for QA automation
 
 Skills: React · Vue.js · Micro-frontends · Design Systems · LINE LIFF
 
@@ -131,6 +135,54 @@ Freelance · Jun 2022 – Oct 2022
 • Built profiles with children management and the order participant and payment forms on a Next.js event-booking site, with server-side rendering and cached data fetching
 
 Skills: Next.js · TypeScript · React Query
+
+---
+
+## Projects
+
+Add each as a separate project. Associate the work ones with LINE MAN Wongnai.
+
+**Cinnamon CLI and boilerplates** · 2022
+Led the CLI part of a six-person boilerplate OKR: @lmwn/cinnamon clones built-in or custom boilerplates and merges package templates and chained dependencies.
+
+**Budibase hosting RFC** · 2022
+Co-authored a low-code platform evaluation and a proposal to self-host Budibase on AWS after measuring about 5x faster queries than the cloud plan.
+
+**Core Analytic** · 2023
+Designed a shared analytics library for screen names and click sources (session-backed screen stack, previous-screen and view-time tracking).
+
+**Google Fleet Engine trip tracking (POC)** · 2023
+Prototyped live trip tracking on the web with Google On-Demand Rides and Deliveries: journey-sharing map, token fetching and request-header injection through a service worker.
+
+**Web loading measurement (POC)** · 2024
+Prototyped a "ready to use" metric for webviews that waits for tagged API calls and in-view images through a MutationObserver instead of window.onload.
+
+**styled-components to Linaria (POC)** · 2025
+Compared Linaria, Pigment CSS and vanilla-extract as zero-runtime replacements for styled-components and prototyped a compatible wrapper with build plugins.
+
+**RFC template for LINE MAN Web** · 2025
+Created the frontend RFC template covering design-system impact, caching, native bridges, API errors, feature flags and security (CORS allowlists, XSS sanitizing).
+
+**QR PromptPay for self pickup (POC)** · 2025
+Wrote the frontend design and scope for QR PromptPay on self-pickup orders (QR page with countdown, help center, ordering-flow and error changes) and added its E2E test.
+
+**AI-generated E2E tests (POC)** · 2026
+Prototyped generating Playwright E2E tests from a screen recording with an AI agent that follows repo conventions.
+
+**Di-Planista** · Nov 2020 – Mar 2021 · https://planistra.netlify.app
+Responsive trip planner to create and manage trips, search places with filters and discover other trips. React, TypeScript, MobX, Express, MongoDB.
+
+**Rainy** · Jan – Apr 2020 · https://opendata-app.hii.or.th/rainy
+Rainfall forecasting and visualization site with current meteorological, air quality and rainfall data. Next.js, Redux, Material UI.
+
+**Planistra (IWGU)** · Sep – Nov 2019 · https://iwgu.netlify.app
+Trip planner built by a student team using Scrum. React, Redux, Ant Design, GraphQL, Express, MongoDB.
+
+**KU Schedule** · Apr 2019 · https://ppipee.github.io/KUSchedule
+Generates a class timetable for Kasetsart University students. React, Semantic UI.
+
+**Scan Skin** · May – Jul 2019
+Compares skincare products across top brands. React, Redux, Firebase, Python.
 
 ---
 

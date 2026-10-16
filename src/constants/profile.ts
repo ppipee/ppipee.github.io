@@ -18,5 +18,6 @@ export const PROFILE: Profile = {
 		school: 'Kasetsart University',
 		degree: 'B.Eng. Computer Engineering',
 		detail: 'GPAX 3.38',
+		period: 'Aug 2017 – Apr 2021',
 	},
 }

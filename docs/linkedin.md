@@ -156,7 +156,7 @@ Set up the frontend system and core pages for the Barcamp Bangkhen website.
 
 ## Education
 
-**Kasetsart University** · B.Eng. Computer Engineering · GPAX 3.38
+**Kasetsart University** · B.Eng. Computer Engineering · Aug 2017 – Apr 2021 · GPAX 3.38
 
 ---
 

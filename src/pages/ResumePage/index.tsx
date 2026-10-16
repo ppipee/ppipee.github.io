@@ -75,8 +75,8 @@ const ResumePage = () => (
 		<PrintSection title={PRINT_LOCALES.education}>
 			<PrintJob
 				title={PROFILE.education.degree}
-				subtitle={PROFILE.education.school}
-				period={PROFILE.education.detail}
+				subtitle={`${PROFILE.education.school} · ${PROFILE.education.detail}`}
+				period={PROFILE.education.period}
 			/>
 		</PrintSection>
 		<p className={styles.more}>{PRINT_LOCALES.more}</p>

@@ -8,6 +8,7 @@ export interface Education {
 	school: string
 	degree: string
 	detail: string
+	period: string
 }
 
 export interface Profile {

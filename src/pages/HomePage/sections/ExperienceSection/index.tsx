@@ -15,7 +15,7 @@ const ExperienceSection = () => (
 			aside={
 				<div className={styles.aside}>
 					<p className={styles.education}>
-						{PROFILE.education.degree}, {PROFILE.education.school} · {PROFILE.education.detail}
+						{PROFILE.education.degree}, {PROFILE.education.school} · {PROFILE.education.period} · {PROFILE.education.detail}
 					</p>
 					<a className={styles.cvLink} href={CV_PDF_PATH} target="_blank" rel="noopener">
 						{HOME_LOCALES.experienceCv}

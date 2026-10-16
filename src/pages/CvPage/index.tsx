@@ -1,5 +1,6 @@
 import PrintHeader from 'components/PrintHeader'
 import PrintJob from 'components/PrintJob'
+import PrintPromotions from 'components/PrintPromotions'
 import PrintSection from 'components/PrintSection'
 import PrintSheet from 'components/PrintSheet'
 import { ACTIVITY, ACTIVITY_TOTAL } from 'constants/activity'
@@ -23,9 +24,16 @@ const CvPage = () => (
 				<div key={job.company} className={styles.job}>
 					<PrintJob title={job.role} subtitle={job.company} period={job.period}>
 						<p className={styles.text}>{job.summary}</p>
+						{job.promotions && <PrintPromotions promotions={job.promotions} />}
 					</PrintJob>
 					{job.eras.map((era) => (
-						<PrintJob key={era.name} title={era.name} subtitle={era.focus} period={era.period} bullets={era.cvHighlights} />
+						<PrintJob
+							key={era.name}
+							title={era.name}
+							subtitle={era.focus}
+							period={era.period}
+							bullets={era.cvHighlights}
+						/>
 					))}
 				</div>
 			))}
@@ -95,7 +103,11 @@ const CvPage = () => (
 			</dl>
 		</PrintSection>
 		<PrintSection title={PRINT_LOCALES.education}>
-			<PrintJob title={PROFILE.education.degree} subtitle={PROFILE.education.school} period={PROFILE.education.detail} />
+			<PrintJob
+				title={PROFILE.education.degree}
+				subtitle={PROFILE.education.school}
+				period={PROFILE.education.detail}
+			/>
 		</PrintSection>
 	</PrintSheet>
 )

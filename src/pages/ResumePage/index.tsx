@@ -1,5 +1,6 @@
 import PrintHeader from 'components/PrintHeader'
 import PrintJob from 'components/PrintJob'
+import PrintPromotions from 'components/PrintPromotions'
 import PrintSection from 'components/PrintSection'
 import PrintSheet from 'components/PrintSheet'
 import { ACTIVITY_TOTAL } from 'constants/activity'
@@ -22,19 +23,32 @@ const ResumePage = () => (
 		</PrintSection>
 		<PrintSection title={PRINT_LOCALES.experience}>
 			{EXPERIENCE.filter((job) => !job.hideOnResume).map((job) =>
-				job.eras.length ? (
-					job.eras.map((era, index) => (
-						<PrintJob
-							key={`${job.company}-${era.name}`}
-							title={index === 0 ? job.role : `${era.name} team`}
-							subtitle={job.eras.length === 1 ? job.company : index === 0 ? `${job.company} · ${era.name} team` : era.focus}
-							period={job.eras.length === 1 ? job.period : era.period}
-							bullets={era.highlights.slice(0, era.resumeLimit ?? era.highlights.length)}
-						/>
-					))
+				job.eras.length > 1 ? (
+					<div key={job.company} className={styles.job}>
+						<PrintJob title={job.role} subtitle={job.company} period={job.period}>
+							{job.promotions && <PrintPromotions promotions={job.promotions} />}
+						</PrintJob>
+						{job.eras
+							.filter((era) => era.resumeLimit !== 0)
+							.map((era) => (
+								<PrintJob
+									key={era.name}
+									title={era.name}
+									subtitle={era.focus}
+									period={era.period}
+									bullets={era.highlights.slice(0, era.resumeLimit ?? era.highlights.length)}
+								/>
+							))}
+					</div>
 				) : (
-					<PrintJob key={job.company} title={job.role} subtitle={job.company} period={job.period}>
-						<p className={styles.line}>{job.summary}</p>
+					<PrintJob
+						key={job.company}
+						title={job.role}
+						subtitle={job.company}
+						period={job.period}
+						bullets={job.eras[0]?.highlights.slice(0, job.eras[0].resumeLimit ?? job.eras[0].highlights.length)}
+					>
+						{!job.eras.length && <p className={styles.line}>{job.summary}</p>}
 					</PrintJob>
 				),
 			)}
@@ -57,7 +71,11 @@ const ResumePage = () => (
 			</dl>
 		</PrintSection>
 		<PrintSection title={PRINT_LOCALES.education}>
-			<PrintJob title={PROFILE.education.degree} subtitle={PROFILE.education.school} period={PROFILE.education.detail} />
+			<PrintJob
+				title={PROFILE.education.degree}
+				subtitle={PROFILE.education.school}
+				period={PROFILE.education.detail}
+			/>
 		</PrintSection>
 		<p className={styles.more}>{PRINT_LOCALES.more}</p>
 	</PrintSheet>

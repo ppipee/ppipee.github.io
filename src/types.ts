@@ -35,12 +35,18 @@ export interface ExperienceEra {
 	resumeLimit?: number
 }
 
+export interface Promotion {
+	title: string
+	period: string
+}
+
 export interface Experience {
 	company: string
 	role: string
 	period: string
 	logo?: string
 	summary: string
+	promotions?: Promotion[]
 	eras: ExperienceEra[]
 	hideOnResume?: boolean
 }

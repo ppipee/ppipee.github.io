@@ -1,18 +1,21 @@
 import BarcampLogo from 'assets/images/barcamp.png'
 import LmwnLogo from 'assets/images/lmwn.png'
-import WongnaiLogo from 'assets/images/wongnai.png'
 
 import type { Experience } from 'types'
 
 export const EXPERIENCE: Experience[] = [
 	{
 		company: 'LINE MAN Wongnai',
-		role: 'Software Engineer, Frontend',
-		period: 'Jan 2021 – Present',
+		role: 'Senior Software Engineer II, Frontend',
+		period: '2020 – Present',
 		logo: LmwnLogo,
 		summary:
-			'Part-time from January 2021, full-time from May 2021. Started on Wongnai.com and its shared libraries, then moved to LINE MAN commerce in 2023.',
-		eras: [
+			'Joined Wongnai as a part-time frontend engineer in 2020 and went full-time in May 2021. Worked on Wongnai.com and its shared libraries, then moved to LINE MAN commerce in 2023.',
+		promotions: [
+			{ title: 'Senior Software Engineer II', period: 'Feb 2026 – Present' },
+			{ title: 'Senior Software Engineer', period: 'Jul 2024 – Jan 2026' },
+			{ title: 'Junior Software Engineer', period: 'May 2021 – Jun 2024' },
+		],		eras: [
 			{
 				name: 'LINE MAN',
 				period: '2023 – Present',
@@ -64,6 +67,22 @@ export const EXPERIENCE: Experience[] = [
 					'Built the LMWN careers website.',
 				],
 			},
+			{
+				name: 'Wongnai Delivery (part-time)',
+				period: '2020 – Apr 2021',
+				resumeLimit: 0,
+				focus: 'Wongnai Delivery web, Wongnai.com deals and the Wongnai UI library',
+				highlights: [
+					'Built the self-pickup ordering flow on Wongnai Delivery web (location, cart, checkout, payment and order tracking) in React SSR.',
+					'Added order history and reorder across the delivery web and shared modules, and contributed components to the Wongnai UI library.',
+				],
+				cvHighlights: [
+					'Built the self-pickup ordering flow on Wongnai Delivery web (location selection, cart, checkout, payment and live order tracking) in React SSR.',
+					'Added order history and reorder across the delivery web, shared modules and types, with a new BFF food-order endpoint.',
+					'Contributed photo grid, carousel, layout, modal, stepper and form components to the Wongnai UI library.',
+					'Redesigned the deal detail page and added credit-back and flash-deal experiences on Wongnai.com.',
+				],
+			},
 		],
 	},
 	{
@@ -97,6 +116,7 @@ export const EXPERIENCE: Experience[] = [
 		role: 'Frontend Developer',
 		period: 'Jun – Oct 2022',
 		summary: 'Customer website for an activity and event booking platform, built by a multi-developer team.',
+		hideOnResume: true,
 		eras: [
 			{
 				name: 'Seek web',
@@ -121,30 +141,5 @@ export const EXPERIENCE: Experience[] = [
 		summary: 'Set up the frontend system and core pages for the Barcamp Bangkhen website.',
 		eras: [],
 		hideOnResume: true,
-	},
-	{
-		company: 'Wongnai Media',
-		role: 'Software Engineer, Frontend Intern',
-		period: 'Apr – Sep 2020',
-		logo: WongnaiLogo,
-		summary: 'Built the self-pickup ordering flow on Wongnai Delivery web and components for the Wongnai UI library.',
-		eras: [
-			{
-				name: 'Internship',
-				period: '2020',
-				resumeLimit: 1,
-				focus: 'Wongnai Delivery web',
-				highlights: [
-					'Built the self-pickup ordering flow on Wongnai Delivery web (location, cart, checkout, payment and order tracking) in React SSR.',
-					'Added order history and reorder across the delivery web and shared modules, and contributed components to the Wongnai UI library.',
-				],
-				cvHighlights: [
-					'Built the self-pickup ordering flow on Wongnai Delivery web (location selection, cart, checkout, payment and live order tracking) in React SSR.',
-					'Added order history and reorder across the delivery web, shared modules and types, with a new BFF food-order endpoint.',
-					'Contributed photo grid, carousel, layout, modal, stepper and form components to the Wongnai UI library.',
-					'Redesigned the deal detail page and added credit-back and flash-deal experiences on Wongnai.com.',
-				],
-			},
-		],
 	},
 ]

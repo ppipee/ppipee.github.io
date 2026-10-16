@@ -3,7 +3,7 @@ import type { Profile } from 'types'
 export const PROFILE: Profile = {
 	name: 'Kittapon Junsupakul',
 	nickname: 'Pipe',
-	role: 'Software Engineer, Frontend',
+	role: 'Senior Software Engineer II, Frontend',
 	location: 'Bangkok, Thailand',
 	summary:
 		'Frontend engineer at LINE MAN Wongnai since 2020. I build the commerce flows people use inside the LINE MAN app (subscriptions, deals, group orders and payments) and the shared SDKs, design systems and tooling other teams build on.',

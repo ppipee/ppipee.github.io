@@ -52,3 +52,9 @@
 	font-size: 8pt;
 	color: var(--fg-muted);
 }
+
+.job {
+	display: flex;
+	flex-direction: column;
+	gap: 2mm;
+}

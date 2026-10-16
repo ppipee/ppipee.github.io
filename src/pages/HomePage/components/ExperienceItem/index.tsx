@@ -23,6 +23,16 @@ const ExperienceItem = ({ job, className }: Props) => (
 				<h3 className={styles.role}>{job.role}</h3>
 				<p className={styles.company}>{job.company}</p>
 				<p className={styles.summary}>{job.summary}</p>
+				{job.promotions && (
+					<ol className={styles.ladder} aria-label="Titles at this company">
+						{job.promotions.map((promotion) => (
+							<li key={promotion.title}>
+								<span className={styles.ladderTitle}>{promotion.title}</span>
+								<span className={styles.ladderPeriod}>{promotion.period}</span>
+							</li>
+						))}
+					</ol>
+				)}
 			</div>
 			{job.eras.map((era) => {
 				const extra = era.cvHighlights.filter((line) => !era.highlights.includes(line))

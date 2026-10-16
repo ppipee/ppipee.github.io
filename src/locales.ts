@@ -7,7 +7,7 @@ export const NAV_LOCALES = {
 }
 
 export const HOME_LOCALES = {
-	role: 'Software Engineer, Frontend at LINE MAN Wongnai',
+	role: 'Senior Software Engineer II, Frontend at LINE MAN Wongnai',
 	downloadResume: 'Download resume',
 	downloadCv: 'Full CV',
 	emailMe: 'Email me',

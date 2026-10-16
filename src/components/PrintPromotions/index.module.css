@@ -1,0 +1,23 @@
+.root {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.6mm 4mm;
+	font-size: 8.3pt;
+	color: var(--fg-muted);
+}
+
+.root li {
+	display: inline-flex;
+	gap: 1.2mm;
+}
+
+.root li:first-child .title {
+	color: var(--fg);
+	font-weight: 500;
+}
+
+.period {
+	font-variant-numeric: tabular-nums;
+}

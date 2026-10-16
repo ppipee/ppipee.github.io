@@ -1,6 +1,5 @@
 import PrintHeader from 'components/PrintHeader'
 import PrintJob from 'components/PrintJob'
-import PrintPromotions from 'components/PrintPromotions'
 import PrintSection from 'components/PrintSection'
 import PrintSheet from 'components/PrintSheet'
 import { ACTIVITY_TOTAL } from 'constants/activity'
@@ -25,9 +24,7 @@ const ResumePage = () => (
 			{EXPERIENCE.filter((job) => !job.hideOnResume).map((job) =>
 				job.eras.length > 1 ? (
 					<div key={job.company} className={styles.job}>
-						<PrintJob title={job.role} subtitle={job.company} period={job.period}>
-							{job.promotions && <PrintPromotions promotions={job.promotions} />}
-						</PrintJob>
+						<PrintJob title={job.role} subtitle={job.company} period={job.period} />
 						{job.eras
 							.filter((era) => era.resumeLimit !== 0)
 							.map((era) => (
